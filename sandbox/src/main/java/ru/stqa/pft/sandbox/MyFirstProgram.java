@@ -1,4 +1,4 @@
-package ru.stqa.ptf.sandbox.firstProgram;
+package ru.stqa.pft.sandbox;
 
 public class MyFirstProgram {
   public static void main(String[] args) {
