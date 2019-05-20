@@ -1,4 +1,4 @@
-package ru.stqa.pft.sandbox.point;
+package ru.stqa.pft.sandbox;
 
 public class Point { //созданый класс
 

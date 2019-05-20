@@ -1,4 +1,4 @@
-package ru.stqa.pft.sandbox.point;
+package ru.stqa.pft.sandbox;
 
 public class PointDis {
   public static void main(String[] args) {
