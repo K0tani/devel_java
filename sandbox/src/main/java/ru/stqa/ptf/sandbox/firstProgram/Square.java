@@ -1,4 +1,4 @@
-package ru.stqa.pft.sandbox;
+package ru.stqa.ptf.sandbox.firstProgram;
 
 public class Square {
 
