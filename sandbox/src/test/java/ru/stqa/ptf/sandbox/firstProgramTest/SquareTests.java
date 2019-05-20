@@ -1,5 +1,6 @@
-package ru.stqa.pft.sandbox;
+package ru.stqa.ptf.sandbox.firstProgramTest;
 
+import ru.stqa.ptf.sandbox.firstProgram.Square;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
