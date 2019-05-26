@@ -31,7 +31,7 @@ public class GroupCreation {
   public void testGroupCreation() throws Exception {
     gotoGroup();
     initCreatGroup();
-    fillForm(new GroupData("T2st", "3", "3"));
+    fillForm(new GroupData("T2st", "3", "2"));
     submitFormGroup();
     returnGrPage();
   }
@@ -67,22 +67,5 @@ public class GroupCreation {
     wd.quit();
   }
 
-  private boolean isElementPresent(By by) {
-    try {
-      wd.findElement(by);
-      return true;
-    } catch (NoSuchElementException e) {
-      return false;
-    }
   }
 
-  private boolean isAlertPresent() {
-    try {
-      wd.switchTo().alert();
-      return true;
-    } catch (NoAlertPresentException e) {
-      return false;
-    }
-  }
-
-}
