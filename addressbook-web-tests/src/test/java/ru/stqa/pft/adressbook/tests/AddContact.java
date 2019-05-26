@@ -1,4 +1,4 @@
-package ru.stqa.pft.adressbook;
+package ru.stqa.pft.adressbook.tests;
 
 import java.util.concurrent.TimeUnit;
 
@@ -6,6 +6,10 @@ import org.testng.annotations.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
+import ru.stqa.pft.adressbook.model.GroupUpBday;
+import ru.stqa.pft.adressbook.model.GroupUpEmail;
+import ru.stqa.pft.adressbook.model.GroupUpFio;
+import ru.stqa.pft.adressbook.model.GroupUpPhones;
 
 public class AddContact {
   private WebDriver wd;
