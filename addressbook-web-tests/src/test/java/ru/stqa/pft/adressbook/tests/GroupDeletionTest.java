@@ -8,7 +8,7 @@ public class GroupDeletionTest extends TestBase {
   @Test
   public void GroupDeletionTest() throws Exception {
 
-    app.gotoGroup();
+    app.getNavigationG().gotoGroup();
     app.getGroupHelper().selectGroup();
     app.getGroupHelper().deleteSelectedGroup();
     app.getGroupHelper().returnGrPage();
