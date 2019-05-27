@@ -3,14 +3,13 @@ package ru.stqa.pft.adressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class NavigationG {
-  private WebDriver wd;
+public class NavigationG extends HelperBase{
 
   public NavigationG(WebDriver wd) {
-    this.wd = wd;
+    super(wd);
   }
 
   public void gotoGroup() {
-    wd.findElement(By.linkText("groups")).click();
+    click(By.linkText("groups"));
   }
 }
