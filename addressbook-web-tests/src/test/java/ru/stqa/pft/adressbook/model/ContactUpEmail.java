@@ -1,11 +1,11 @@
 package ru.stqa.pft.adressbook.model;
 
-public class GroupUpEmail {
+public class ContactUpEmail {
   private final String firstEmail;
   private final String secondEmail;
   private final String thirdEmail;
 
-  public GroupUpEmail(String firstEmail, String secondEmail, String thirdEmail) {
+  public ContactUpEmail(String firstEmail, String secondEmail, String thirdEmail) {
     this.firstEmail = firstEmail;
     this.secondEmail = secondEmail;
     this.thirdEmail = thirdEmail;

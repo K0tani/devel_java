@@ -1,12 +1,12 @@
 package ru.stqa.pft.adressbook.model;
 
-public class GroupUpPhones {
+public class ContactUpPhones {
   private final String homePhone;
   private final String mobilePhone;
   private final String workPhone;
   private final String fax;
 
-  public GroupUpPhones(String homePhone, String mobilePhone, String workPhone, String fax) {
+  public ContactUpPhones(String homePhone, String mobilePhone, String workPhone, String fax) {
     this.homePhone = homePhone;
     this.mobilePhone = mobilePhone;
     this.workPhone = workPhone;

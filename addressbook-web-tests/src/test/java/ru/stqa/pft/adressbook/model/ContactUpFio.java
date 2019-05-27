@@ -1,12 +1,12 @@
 package ru.stqa.pft.adressbook.model;
 
-public class GroupUpFio {
+public class ContactUpFio {
   private final String firstName;
   private final String middleName;
   private final String lastName;
   private final String nickName;
 
-  public GroupUpFio(String firstName, String middleName, String lastName, String nickName) {
+  public ContactUpFio(String firstName, String middleName, String lastName, String nickName) {
     this.firstName = firstName;
     this.middleName = middleName;
     this.lastName = lastName;
