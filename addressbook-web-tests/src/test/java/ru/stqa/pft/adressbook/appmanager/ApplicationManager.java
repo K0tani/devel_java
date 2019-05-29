@@ -13,14 +13,14 @@ public class ApplicationManager {
   private  ContactHelper contactHelper;
   private  SessionLogin sessionLogin;
   private  GroupHelper groupHelper;
-  private  NavigationG navigationG;
+  private Navigation navigation;
 
   public void init() {
     wd = new FirefoxDriver();
     wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     wd.get("http://localhost/addressbook/");
     groupHelper = new GroupHelper(wd);
-    navigationG = new NavigationG(wd);
+    navigation = new Navigation(wd);
     sessionLogin = new SessionLogin(wd);
     contactHelper = new ContactHelper(wd);
     sessionLogin.login("admin", "secret");
@@ -34,8 +34,8 @@ public class ApplicationManager {
     return groupHelper;
   }
 
-  public NavigationG getNavigationG() {
-    return navigationG;
+  public Navigation getNavigation() {
+    return navigation;
   }
 
   private boolean isElementPresent(By by) {
