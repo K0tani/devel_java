@@ -25,22 +25,41 @@ public class ContactHelper extends HelperBase{
   }
 
   public void chooseYearForBday(String yearForBday) {
-    wd.findElement(By.name("byear")).click();
+    click(By.name("byear"));
     wd.findElement(By.name("byear")).sendKeys(yearForBday);
   }
 
   public void chooseMonthForBday(String monthForBday) {
-    wd.findElement(By.name("bmonth")).click();
+    click(By.name("bmonth"));
     new Select(wd.findElement(By.name("bmonth"))).selectByVisibleText(monthForBday);
   }
 
   public void chooseDateForBday(String dateForBday) {
-    wd.findElement(By.name("bday")).click();
+    click(By.name("bday"));
     new Select(wd.findElement(By.name("bday"))).selectByVisibleText(dateForBday);
   }
 
   public void clickOnEnter() {
-    wd.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
+    click(By.xpath("//div[@id='content']/form/input[21]"));
   }
 
+  public void selectContact() {
+    click(By.name("selected[]"));
+  }
+
+  public void deleteContact() {
+    click(By.xpath("//input[@value='Delete']"));
+  }
+
+  public void chooseOk() {
+    wd.switchTo().alert().accept();
+  }
+
+  public void editContact() {
+    click(By.xpath("//img[@alt='Edit']"));
+  }
+
+  public void updateContact() {
+    click(By.xpath("(//input[@name='update'])[2]"));
+  }
 }
