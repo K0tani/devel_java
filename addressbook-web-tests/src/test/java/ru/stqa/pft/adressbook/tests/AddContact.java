@@ -8,9 +8,9 @@ public class AddContact extends TestBase{
   @Test
   public void testAddContact() throws Exception {
     app.getNavigation().addNewContact();
-    app.getContactHelper().fillContact(new ContactData("Алексей", "Григорович", "Абрелян", "Улица", "+79993459988", "pokrt@mail.ru", "https://www.reddit.com", "14", "February", "1991"));
+    app.getContactHelper().fillContact(new ContactData("Алексей", "Григорович", "Абрелян", "Улица", "+79993459988", "pokrt@mail.ru", "https://www.reddit.com", "14", "February", "1991", "T2st"), true);
     app.getContactHelper().clickOnEnter();
-    app.getNavigation().goBackHomeFromContactPage();
+    app.getNavigation().goToHomePage();
   }
 
 }

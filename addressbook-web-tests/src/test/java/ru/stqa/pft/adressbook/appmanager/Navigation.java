@@ -10,14 +10,23 @@ public class Navigation extends HelperBase{
   }
 
   public void gotoGroup() {
+    if(isElemetPresent(By.tagName("h1"))
+            && wd.findElement(By.tagName("h1")).getText().equals("Groups")
+            && isElemetPresent (By.name("new"))) {
+      return;
+    }
     click(By.linkText("groups"));
   }
 
-  public void goBackHomeFromContactPage() {
+  public void goToHomePage() {
+    if (isElemetPresent(By.id("maintable"))) {
+      return;
+    }
     wd.findElement(By.linkText("home")).click();
   }
 
   public void addNewContact() {
     wd.findElement(By.linkText("add new")).click();
   }
+
 }
