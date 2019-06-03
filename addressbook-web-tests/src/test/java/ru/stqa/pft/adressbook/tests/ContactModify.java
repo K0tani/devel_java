@@ -3,7 +3,7 @@ package ru.stqa.pft.adressbook.tests;
 import org.testng.annotations.Test;
 import ru.stqa.pft.adressbook.model.ContactData;
 
-public class ModifyContact extends TestBase {
+public class ContactModify extends TestBase {
   @Test
   public void testDeleteContact() {
     app.getContactHelper().editContact();
