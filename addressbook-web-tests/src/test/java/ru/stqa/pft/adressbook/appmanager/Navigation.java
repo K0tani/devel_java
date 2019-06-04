@@ -25,8 +25,6 @@ public class Navigation extends HelperBase{
     wd.findElement(By.linkText("home")).click();
   }
 
-  public void addNewContact() {
-    wd.findElement(By.linkText("add new")).click();
-  }
+
 
 }

@@ -1,7 +1,6 @@
 package ru.stqa.pft.adressbook.appmanager;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -17,10 +16,6 @@ public class ContactHelper extends HelperBase{
     type(By.name("firstname"), contactData.getFirstName());
     type(By.name("middlename"), contactData.getMiddleName());
     type(By.name("lastname"), contactData.getLastName());
-    type(By.name("address"), contactData.getAddRess());
-    type(By.name("home"), contactData.getHomeMobile());
-    type(By.name("email"), contactData.getEmailFill());
-    type(By.name("homepage"), contactData.getHomePage());
     chooseDateForBday(contactData.getDateForBday());
     chooseMonthForBday(contactData.getMonthForBday());
     chooseYearForBday(contactData.getYearForBday());
@@ -30,6 +25,26 @@ public class ContactHelper extends HelperBase{
     } else {
       Assert.assertFalse(isElemetPresent(By.name("new_group")));
     }
+  }
+
+  public boolean isThereAContact() {
+    return isElemetPresent(By.name("selected[]"));
+  }
+
+  public void addNewContact() {
+    wd.findElement(By.linkText("add new")).click();
+  }
+
+  public void createContact (ContactData contact, boolean creation) {
+    addNewContact();
+    fillContact(contact, creation);
+    clickOnEnter();
+
+    clickGoHomePage();
+  }
+
+  public void clickGoHomePage() {
+    wd.findElement(By.linkText("home page")).click();
   }
 
   public void chooseYearForBday(String yearForBday) {
