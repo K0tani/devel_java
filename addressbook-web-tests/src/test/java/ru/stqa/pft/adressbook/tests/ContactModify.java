@@ -1,5 +1,6 @@
 package ru.stqa.pft.adressbook.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.adressbook.model.ContactData;
 
@@ -17,5 +18,8 @@ public class ContactModify extends TestBase {
             "May", "1966", null), false);
     app.getContactHelper().updateContact();
     app.getNavigation().goToHomePage();
+
+
+
   }
 }

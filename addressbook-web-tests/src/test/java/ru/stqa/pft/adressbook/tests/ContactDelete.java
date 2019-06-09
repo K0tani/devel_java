@@ -1,5 +1,6 @@
 package ru.stqa.pft.adressbook.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.adressbook.model.ContactData;
 
