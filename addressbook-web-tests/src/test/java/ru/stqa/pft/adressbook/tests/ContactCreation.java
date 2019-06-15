@@ -8,10 +8,10 @@ import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 
-public class ContactAdd extends TestBase{
+public class ContactCreation extends TestBase{
 
   @Test (enabled = false)
-  public void testAddContact() throws Exception {
+  public void ContactCreation() throws Exception {
     List<ContactData> before = app.getContactHelper().getContactList();
     ContactData contact = new ContactData("Пётр", "Алексеевич",
             "Габрилян", "31",
