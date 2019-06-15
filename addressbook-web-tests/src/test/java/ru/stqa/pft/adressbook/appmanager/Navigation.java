@@ -22,9 +22,12 @@ public class Navigation extends HelperBase{
     if (isElemetPresent(By.id("maintable"))) {
       return;
     }
-    wd.findElement(By.linkText("home")).click();
+
   }
 
+  public void clickOnPageHome() {
+    wd.findElement(By.xpath("//a[.='home']\n")).click();
+  }
 
 
 }

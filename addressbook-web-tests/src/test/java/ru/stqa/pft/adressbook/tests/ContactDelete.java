@@ -13,10 +13,13 @@ public class ContactDelete extends TestBase {
               "Габрилян", "31",
               "May", "1966", "T2st"), true);
     }
+    int before = app.getContactHelper().getContactCount(); //считаем контакты до
     app.getContactHelper().selectContact();
     app.getContactHelper().deleteContact();
     app.getContactHelper().chooseOk();
-    app.getNavigation().goToHomePage();
+    app.getNavigation().clickOnPageHome();
+    int after = app.getContactHelper().getContactCount(); //считаем контакты после
+    Assert.assertEquals(after, before -1);
   }
 }
 
