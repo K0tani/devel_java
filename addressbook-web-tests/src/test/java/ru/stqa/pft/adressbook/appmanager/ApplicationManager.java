@@ -44,11 +44,11 @@ public class ApplicationManager {
     wd.quit();
   }
 
-  public GroupHelper getGroupHelper() {
+  public GroupHelper group() {
     return groupHelper;
   }
 
-  public Navigation getNavigation() {
+  public Navigation goTo() {
     return navigation;
   }
 
