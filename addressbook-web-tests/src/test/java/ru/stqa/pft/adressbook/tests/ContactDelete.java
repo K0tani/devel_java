@@ -16,12 +16,18 @@ public class ContactDelete extends TestBase {
               "May", "1966", "T2st"), true);
     }
     List<ContactData> before = app.getContactHelper().getContactList();
+
     app.getContactHelper().selectContact(before.size() -1);
     app.getContactHelper().deleteContact();
     app.getContactHelper().chooseOk();
     app.getNavigation().clickOnPageHome();
+
     List<ContactData> after = app.getContactHelper().getContactList();
     Assert.assertEquals(after.size(), before.size() -1);
+
+    before.remove(before.size() -1);{
+      Assert.assertEquals(before, after);
+    }
 
   }
 }

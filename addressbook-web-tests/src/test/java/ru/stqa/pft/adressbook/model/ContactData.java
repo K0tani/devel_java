@@ -1,6 +1,9 @@
 package ru.stqa.pft.adressbook.model;
 
+import java.util.Objects;
+
 public class ContactData {
+    private int id;
     private final String firstName;
     private final String middleName;
     private final String lastName;
@@ -10,7 +13,20 @@ public class ContactData {
     private String group;
 
 
+
     public ContactData(String firstName, String middleName, String lastName, String dateForBday, String monthForBday, String yearForBday, String group) {
+        this.id = 0;
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
+        this.dateForBday = dateForBday;
+        this.monthForBday = monthForBday;
+        this.yearForBday = yearForBday;
+        this.group = group;
+
+    }
+    public ContactData(int id, String firstName, String middleName, String lastName, String dateForBday, String monthForBday, String yearForBday, String group) {
+        this.id = id;
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
@@ -37,6 +53,13 @@ public class ContactData {
         return dateForBday;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+    public int getId() {
+        return id;
+    }
+
     public String getMonthForBday() {
         return monthForBday;
     }
@@ -48,5 +71,33 @@ public class ContactData {
     public String getGroup() {
         return group;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ContactData that = (ContactData) o;
+        return id == that.id &&
+                Objects.equals(firstName, that.firstName) &&
+                Objects.equals(lastName, that.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstName, lastName);
+    }
+
+
+
+    @Override
+    public String toString() {
+        return "ContactData{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
+
+
 }
 
