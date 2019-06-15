@@ -6,14 +6,14 @@ import ru.stqa.pft.adressbook.model.ContactData;
 
 public class ContactModify extends TestBase {
   @Test
-  public void testDeleteContact() {
+  public void contactModify() {
     if (! app.getContactHelper().isThereAContact()) {
       app.getContactHelper().createContact(new ContactData("Пётр", "Алексеевич",
               "Габрилян", "31",
               "May", "1966", "T2st"), true);
     }
     int before = app.getContactHelper().getContactCount(); //считаем контакты до
-    app.getContactHelper().editContact();
+    app.getContactHelper().editContact(before -1);
     app.getContactHelper().fillContact(new ContactData("Пётр", "Алексеевич",
             "Габрилян", "31",
             "May", "1966", null), false);
