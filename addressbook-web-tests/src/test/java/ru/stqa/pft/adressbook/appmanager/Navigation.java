@@ -18,16 +18,4 @@ public class Navigation extends HelperBase{
     click(By.linkText("groups"));
   }
 
-  public void goToHomePage() {
-    if (isElemetPresent(By.id("maintable"))) {
-      return;
-    }
-
-  }
-
-  public void clickOnPageHome() {
-    wd.findElement(By.xpath("//a[.='home']\n")).click();
-  }
-
-
 }
