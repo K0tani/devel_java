@@ -21,5 +21,17 @@ public class GroupCreation extends TestBase {
 
   }
 
+  @Test
+  public void testBadGroupCreation() throws Exception {
+    app.goTo().groupPage();
+    Groups before = app.group().all();
+    GroupData group = new GroupData().withName("T2st'");
+    app.group().create(group);
+    assertThat(app.group().count(), equalTo(before.size()));
+    Groups after = app.group().all();
+    assertThat(after, equalTo(before));
+
+  }
+
 }
 
