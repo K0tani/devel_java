@@ -11,6 +11,9 @@ public class ContactData {
     private  String monthForBday;
     private  String yearForBday;
     private  String group;
+    private  String home;
+    private  String mobile;
+    private  String work;
 
     public String getFirstName() {
         return firstName;
@@ -26,6 +29,34 @@ public class ContactData {
 
     public String getDateForBday() {
         return dateForBday;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getMonthForBday() {
+        return monthForBday;
+    }
+
+    public String getYearForBday() {
+        return yearForBday;
+    }
+
+    public String getGroup() {
+        return group;
+    }
+
+    public String getHome() {
+        return home;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public String getWork() {
+        return work;
     }
 
     public ContactData withId(int id) {
@@ -68,20 +99,19 @@ public class ContactData {
         return this;
     }
 
-    public int getId() {
-        return id;
+    public ContactData withtHome(String getHome) {
+        this.home = home;
+        return this;
     }
 
-    public String getMonthForBday() {
-        return monthForBday;
+    public ContactData withtMobile(String getMobile) {
+        this.mobile = mobile;
+        return this;
     }
 
-    public String getYearForBday() {
-        return yearForBday;
-    }
-
-    public String getGroup() {
-        return group;
+    public ContactData withttWork(String getWork) {
+        this.work = work;
+        return this;
     }
 
 
