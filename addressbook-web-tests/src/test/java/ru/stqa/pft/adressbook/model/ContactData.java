@@ -14,6 +14,55 @@ public class ContactData {
     private  String home;
     private  String mobile;
     private  String work;
+    private String email;
+    private String email2;
+    private String email3;
+    private  String allPhones;
+    private  String address;
+    private  String allEmails;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public ContactData withEmail(String email) {
+        this.email = email;
+        return this;
+
+    }
+
+    public String getEmail2() {
+        return email2;
+    }
+
+    public ContactData withEmail2(String email2) {
+        this.email2 = email2;
+        return this;
+
+    }
+
+    public String getEmail3() {
+        return email3;
+    }
+
+    public ContactData withEmail3(String email3) {
+        this.email3 = email3;
+        return this;
+    }
+
+
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getAllEmails() {
+        return allEmails;
+    }
+
+    public int getId() {
+        return id;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -31,8 +80,8 @@ public class ContactData {
         return dateForBday;
     }
 
-    public int getId() {
-        return id;
+    public String getAllPhones() {
+        return allPhones;
     }
 
     public String getMonthForBday() {
@@ -64,6 +113,21 @@ public class ContactData {
         return this;
     }
 
+    public ContactData withAddress(String address) {
+        this.address = address;
+        return this;
+    }
+
+    public ContactData withAllEmails(String allEmails) {
+        this.allEmails = allEmails;
+        return this;
+    }
+
+    public ContactData withAllPhones(String allPhones) {
+        this.allPhones = allPhones;
+        return this;
+    }
+
     public ContactData withFirstName(String firstName) {
         this.firstName = firstName;
         return this;
@@ -84,7 +148,7 @@ public class ContactData {
         return this;
     }
 
-    public ContactData withtMonthForBday(String monthForBday) {
+    public ContactData withMonthForBday(String monthForBday) {
         this.monthForBday = monthForBday;
         return this;
     }
@@ -99,17 +163,17 @@ public class ContactData {
         return this;
     }
 
-    public ContactData withtHome(String getHome) {
+    public ContactData withHome(String home) {
         this.home = home;
         return this;
     }
 
-    public ContactData withtMobile(String getMobile) {
+    public ContactData withMobile(String mobile) {
         this.mobile = mobile;
         return this;
     }
 
-    public ContactData withttWork(String getWork) {
+    public ContactData withWork(String work) {
         this.work = work;
         return this;
     }
@@ -139,5 +203,7 @@ public class ContactData {
     public int hashCode() {
         return Objects.hash(id, firstName, lastName);
     }
+
+
 }
 
