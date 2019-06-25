@@ -30,15 +30,15 @@ public class ContactHelper extends HelperBase {
     type(By.name("email"), contactData.getEmail());
     type(By.name("email2"), contactData.getEmail2());
     type(By.name("email3"), contactData.getEmail3());
-    selectListValue(By.name("bday"), contactData.getDateForBday());
-    selectListValue(By.name("bmonth"), contactData.getMonthForBday());
-    type(By.name("byear"), contactData.getYearForBday());
+    //selectListValue(By.name("bday"), contactData.getDateForBday());
+    //selectListValue(By.name("bmonth"), contactData.getMonthForBday());
+    //type(By.name("byear"), contactData.getYearForBday());
 
-    if (creation) {
-      new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
-    } else {
-      Assert.assertFalse(isElemetPresent(By.name("new_group")));
-    }
+   // if (creation) {
+   //   new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+   // } else {
+   //   Assert.assertFalse(isElemetPresent(By.name("new_group")));
+   // }
   }
 
   public boolean isThereAContact() {

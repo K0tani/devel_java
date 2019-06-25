@@ -1,0 +1,35 @@
+[
+  {
+    "firstName": "Пётр 0",
+    "middleName": "Алеексеевич 0",
+    "lastName": "Габрилянов 0",
+    "home": "89100998877",
+    "mobile": "89160998870",
+    "work": "0916099887",
+    "email": "mailNumber0@mail.ru",
+    "email2": "mailNumber0@gmail.com",
+    "email3": "mailNumber0@rambler.ru"
+  },
+  {
+    "firstName": "Пётр 1",
+    "middleName": "Алеексеевич 1",
+    "lastName": "Габрилянов 1",
+    "home": "89110998877",
+    "mobile": "89160998871",
+    "work": "1916099887",
+    "email": "mailNumber1@mail.ru",
+    "email2": "mailNumber1@gmail.com",
+    "email3": "mailNumber1@rambler.ru"
+  },
+  {
+    "firstName": "Пётр 2",
+    "middleName": "Алеексеевич 2",
+    "lastName": "Габрилянов 2",
+    "home": "89120998877",
+    "mobile": "89160998872",
+    "work": "2916099887",
+    "email": "mailNumber2@mail.ru",
+    "email2": "mailNumber2@gmail.com",
+    "email3": "mailNumber2@rambler.ru"
+  }
+]
