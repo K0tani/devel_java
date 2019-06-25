@@ -55,33 +55,32 @@ public class ContactDataGenerator {
   private void saveAsJson(List<ContactData> contacts, File file) throws IOException {
     Gson gson = new GsonBuilder().setPrettyPrinting().excludeFieldsWithoutExposeAnnotation().create();
     String json = gson.toJson(contacts);
-    Writer writer = new FileWriter(file);
-    writer.write(json);
-    writer.close();
-
+    try (Writer writer = new FileWriter(file);) {
+      writer.write(json);
+    }
   }
 
   private void saveAsXml(List<ContactData> contacts, File file) throws IOException {
     XStream xstream = new XStream();
     xstream.processAnnotations(ContactData.class);
     String xml = xstream.toXML(contacts);
-    Writer writer = new FileWriter(file);
-    writer.write(xml);
-    writer.close();
+    try (Writer writer = new FileWriter(file);) {
+      writer.write(xml);
+    }
   }
 
 
   private  void saveAsCsv(List<ContactData> contacts, File file) throws IOException {
     System.out.println(new File(".").getAbsolutePath());
-    Writer writer = new FileWriter(file);
-    for (ContactData contact : contacts) {
-      writer.write(String.format("%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s\n",contact.withFirstName("Пётр"),contact.withMiddleName("Алексеевич"),
-              contact.withLastName("Габрилян"), contact.withAddress("улица Пушкина"),contact.withHome("878"),
-              contact.withMobile("707"),contact.withWork("7873"),contact.withEmail("123@gmail.com")
-              ,contact.withEmail2("423@ya.ru"),contact.withEmail3("576@rambler.ru").withDateForBday("31")
-              ,contact.withMonthForBday("May"),contact.withYearForBday("1966"),contact.withGroup("1st")));
+    try (Writer writer = new FileWriter(file)) {
+      for (ContactData contact : contacts) {
+        writer.write(String.format("%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s\n",contact.withFirstName("Пётр"),contact.withMiddleName("Алексеевич"),
+                contact.withLastName("Габрилян"), contact.withAddress("улица Пушкина"),contact.withHome("878"),
+                contact.withMobile("707"),contact.withWork("7873"),contact.withEmail("123@gmail.com")
+                ,contact.withEmail2("423@ya.ru"),contact.withEmail3("576@rambler.ru").withDateForBday("31")
+                ,contact.withMonthForBday("May"),contact.withYearForBday("1966"),contact.withGroup("1st")));
+      }
     }
-    writer.close();
   }
 
   private  List<ContactData> generateContacts(int count) {
