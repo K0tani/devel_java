@@ -1,4 +1,4 @@
-package ru.stqa.pft.adressbook.generators;
+﻿package ru.stqa.pft.adressbook.generators;
 
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
@@ -55,7 +55,7 @@ public class ContactDataGenerator {
   private void saveAsJson(List<ContactData> contacts, File file) throws IOException {
     Gson gson = new GsonBuilder().setPrettyPrinting().excludeFieldsWithoutExposeAnnotation().create();
     String json = gson.toJson(contacts);
-    try (Writer writer = new FileWriter(file);) {
+
       writer.write(json);
     }
   }
@@ -64,7 +64,7 @@ public class ContactDataGenerator {
     XStream xstream = new XStream();
     xstream.processAnnotations(ContactData.class);
     String xml = xstream.toXML(contacts);
-    try (Writer writer = new FileWriter(file);) {
+
       writer.write(xml);
     }
   }
