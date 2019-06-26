@@ -24,7 +24,8 @@ public class ContactCreation extends TestBase{
 
   @DataProvider
   public Iterator<Object[]> validContactsFromJson() throws IOException {
-    try (BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.json")))) {
+    try (BufferedReader reader = new BufferedReader
+            (new FileReader(new File("src/test/resources/contacts.json")))) {
       String json = "";
       String line = reader.readLine();
       while (line != null) {
@@ -37,16 +38,16 @@ public class ContactCreation extends TestBase{
     }
   }
 
+
+
   @Test(dataProvider = "validContactsFromJson")
   public void ContactCreation(ContactData contact) throws Exception {
     Contacts before = app.contact().all();
     File photo = new File("src/test/resources/mugi.png");
-    app.contact().create(contact, true);
+    app.contact().create(contact.withPhoto(photo), true);
     assertThat(app.contact().count(), equalTo(before.size() + 1));
     Contacts after = app.contact().all();
     assertThat(after, equalTo(before.withAdded
             (contact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));
   }
-
-
 }
