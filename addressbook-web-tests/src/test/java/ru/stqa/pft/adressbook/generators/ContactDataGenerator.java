@@ -6,8 +6,6 @@ import com.beust.jcommander.ParameterException;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import ru.stqa.pft.adressbook.model.ContactData;
-import ru.stqa.pft.adressbook.model.GroupData;
-import ru.stqa.pft.adressbook.model.Groups;
 
 import java.io.File;
 import java.io.FileWriter;
