@@ -5,51 +5,127 @@ import java.util.Objects;
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import org.hibernate.annotations.Type;
+
+import javax.persistence.*;
 
 @XStreamAlias("contact")
+@Entity
+@Table(name = "addressbook")
 public class ContactData {
     @XStreamOmitField
+    @Id
+    @Column (name = "id")
     private int id = Integer.MAX_VALUE;
+
     @Expose
+    @Column(name = "firstname")
     private String firstName;
+
     @Expose
     private String middleName;
+
     @Expose
+    @Column(name = "lastname")
     private String lastName;
+
+
     @Expose
+    @Column(name = "bday", columnDefinition = "tinyint")
     private String dateForBday;
+
     @Expose
+    @Column(name = "bmonth", columnDefinition = "varchar")
     private String monthForBday;
+
     @Expose
+    @Column(name = "byear", columnDefinition = "varchar")
+    @Type(type = "text")
     private String yearForBday;
+
     @Expose
+    @Transient
     private String group;
+
     @Expose
+    @Column(name = "home")
+    @Type(type = "text")
     private String home;
+
     @Expose
+    @Column(name = "mobile")
+    @Type(type = "text")
     private String mobile;
+
     @Expose
+    @Column(name = "work")
+    @Type(type = "text")
     private String work;
+
     @Expose
+    @Column(name = "email")
+    @Type(type = "text")
     private String email;
+
     @Expose
+    @Column(name = "email2")
+    @Type(type = "text")
     private String email2;
+
     @Expose
+    @Column(name = "email3")
+    @Type(type = "text")
     private String email3;
+
+    @Transient
     private String allPhones;
+
     @Expose
+    @Type(type = "text")
     private String address;
+
+    @Transient
     private String allEmails;
+
     @Expose
-    private File photo;
+    @Type(type = "text")
+    @Column(name = "photo")
+    private String photo;
 
     public File getPhoto() {
-        return photo;
+        return new File(photo);
     }
 
     public ContactData withPhoto(File photo) {
-        this.photo = photo;
+        this.photo = photo.getPath();
         return this;
+    }
+
+    public String getDateForBday() {
+        return dateForBday;
+    }
+
+    public ContactData withDateForBday(String dateForBday) {
+        this.dateForBday = dateForBday;
+        return this;
+    }
+
+    public ContactData withMonthForBday(String monthForBday) {
+        this.monthForBday = monthForBday;
+        return this;
+    }
+
+    public ContactData withYearForBday(String yearForBday) {
+        this.yearForBday = yearForBday;
+        return this;
+    }
+
+    public String getMonthForBday() {
+        return monthForBday;
+    }
+
+    public String getYearForBday() {
+        return yearForBday;
     }
 
     public String getEmail() {
@@ -81,8 +157,6 @@ public class ContactData {
         return this;
     }
 
-
-
     public String getAddress() {
         return address;
     }
@@ -107,21 +181,11 @@ public class ContactData {
         return lastName;
     }
 
-    public String getDateForBday() {
-        return dateForBday;
-    }
 
     public String getAllPhones() {
         return allPhones;
     }
 
-    public String getMonthForBday() {
-        return monthForBday;
-    }
-
-    public String getYearForBday() {
-        return yearForBday;
-    }
 
     public String getGroup() {
         return group;
@@ -171,21 +235,6 @@ public class ContactData {
 
     public ContactData withLastName(String lastName) {
         this.lastName = lastName;
-        return this;
-    }
-
-    public ContactData withDateForBday(String dateForBday) {
-        this.dateForBday = dateForBday;
-        return this;
-    }
-
-    public ContactData withMonthForBday(String monthForBday) {
-        this.monthForBday = monthForBday;
-        return this;
-    }
-
-    public ContactData withYearForBday(String yearForBday) {
-        this.yearForBday = yearForBday;
         return this;
     }
 
