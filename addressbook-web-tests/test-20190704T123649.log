@@ -1,0 +1,925 @@
+930  [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+997  [main] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+1005 [main] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+1028 [main] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+1348 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+1353 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2013 [main] DEBUG o.h.b.j.i.s.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+2013 [main] DEBUG o.h.b.j.i.s.LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+2057 [main] DEBUG o.h.b.c.internal.JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+2896 [main] DEBUG o.h.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2963 [main] DEBUG o.h.c.i.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2966 [main] DEBUG o.h.c.i.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+3060 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+3305 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@5524cca1
+3305 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@5524cca1
+3306 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@5524cca1
+3310 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@4681c175
+3312 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@6fa51cd4
+3313 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@5386659f
+3316 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@7ce69770
+3316 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@7ce69770
+3316 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@7ce69770
+3320 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@7e057f43
+3320 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@7e057f43
+3321 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@7e057f43
+3328 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@231f98ef
+3328 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@231f98ef
+3328 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@231f98ef
+3330 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@451001e5
+3330 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@451001e5
+3331 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@451001e5
+3333 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@24569dba
+3333 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@24569dba
+3334 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@24569dba
+3340 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@7188af83
+3340 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@7188af83
+3340 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@7188af83
+3342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@303cf2ba
+3342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@303cf2ba
+3342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@303cf2ba
+3344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@2b30a42c
+3344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@2b30a42c
+3347 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@792b749c
+3347 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@792b749c
+3349 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@305ffe9e
+3349 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@305ffe9e
+3350 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@7ae0a9ec
+3352 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@6f10d5b6
+3355 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@3f4faf53
+3356 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@3f4faf53
+3360 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@25be7b63
+3360 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@25be7b63
+3411 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@7a5ceedd
+3412 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@7a5ceedd
+3415 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@3de8f619
+3415 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@3de8f619
+3419 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@7bd7d6d6
+3419 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@7bd7d6d6
+3422 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@2de56eb2
+3422 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@2de56eb2
+3426 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@17bffc17
+3426 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@17bffc17
+3429 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@4722ef0c
+3429 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@4722ef0c
+3437 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@5e7cd6cc
+3438 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@5e7cd6cc
+3443 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@6e2829c7
+3443 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@6e2829c7
+3445 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@55de24cc
+3445 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@55de24cc
+3448 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@7e990ed7
+3448 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@7e990ed7
+3448 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@7e990ed7
+3454 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@4d15107f
+3456 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@79207381
+3456 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@79207381
+3456 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@79207381
+3458 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@7a6d7e92
+3460 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@16150369
+3460 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@16150369
+3466 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@23f5b5dc
+3466 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@23f5b5dc
+3473 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@5db6b9cd
+3473 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@5db6b9cd
+3474 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@1be2019a
+3475 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@1be2019a
+3476 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@2657d4dd
+3476 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@2657d4dd
+3477 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@7139992f
+3479 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@7eecb5b8
+3479 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@7eecb5b8
+3480 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@7eecb5b8
+3482 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@5c7bfdc1
+3482 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@5c7bfdc1
+3482 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@5c7bfdc1
+3489 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@7fb4f2a9
+3492 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@7dfd3c81
+3494 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@7dfb0c0f
+3494 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@7dfb0c0f
+3494 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@7dfb0c0f
+3496 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@d23e042
+3497 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@d23e042
+3497 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@d23e042
+3498 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@14dd7b39
+3499 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@5dafbe45
+3503 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@12591ac8
+3504 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@12591ac8
+3505 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@41330d4f
+3508 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@37313c65
+3508 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@37313c65
+3511 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@5d908d47
+3511 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@5d908d47
+3512 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@1c9b0314
+3513 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@2d29b4ee
+3516 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@700fb871
+3526 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@642a7222
+3526 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@642a7222
+3527 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@4f49f6af
+3527 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@78452606
+3527 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@147e2ae7
+3528 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@448c8166
+3528 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@4470fbd6
+3528 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@15d49048
+3528 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@7098b907
+3528 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@503f91c3
+3603 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+3604 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+3607 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+3608 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+3609 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+3612 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+3613 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+3615 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+3619 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+3621 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+3622 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+3623 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+3624 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+3627 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+3638 [main] DEBUG o.h.a.i.AgroalConnectionProvider - Configuring Agroal
+3838 [main] DEBUG o.h.a.i.AgroalConnectionProvider - Agroal Configured
+4522 [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 5.5.5-10.1.38-MariaDB
+      major : 5
+      minor : 5
+4522 [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
+      major : 8
+      minor : 0
+4522 [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - JDBC version : 4.2
+4564 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+4702 [main] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+4706 [main] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+4753 [main] DEBUG o.h.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+4762 [main] DEBUG o.h.t.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@24ba9639] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@38aa816f]
+4989 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: ru.stqa.pft.adressbook.model.GroupData
+5066 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+5095 [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name GroupData
+5107 [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity ru.stqa.pft.adressbook.model.GroupData on table group_list
+5231 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_id, insertable=true, updatable=true, unique=false}
+5246 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+5249 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.GroupData:id]
+5263 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+5268 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+5277 [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(group_id)]), id, assigned, , ...)
+5278 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_footer, insertable=true, updatable=true, unique=false}
+5279 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property footer with lazy=false
+5279 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.GroupData:footer]
+5280 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for footer
+5280 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property footer
+5282 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_header, insertable=true, updatable=true, unique=false}
+5282 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property header with lazy=false
+5282 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.GroupData:header]
+5283 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for header
+5291 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property header
+5292 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_name, insertable=true, updatable=true, unique=false}
+5293 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+5293 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.GroupData:name]
+5293 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for name
+5293 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property name
+5295 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: ru.stqa.pft.adressbook.model.ContactData
+5297 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+5297 [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name ContactData
+5298 [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity ru.stqa.pft.adressbook.model.ContactData on table addressbook
+5307 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=id, insertable=true, updatable=true, unique=false}
+5308 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+5308 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.ContactData:id]
+5308 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+5308 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+5310 [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, assigned, , ...)
+5313 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=address, insertable=true, updatable=true, unique=false}
+5313 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property address with lazy=false
+5313 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.ContactData:address]
+5314 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for address
+5315 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property address
+5315 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=bday, insertable=true, updatable=true, unique=false}
+5315 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property dateForBday with lazy=false
+5315 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.ContactData:dateForBday]
+5316 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for dateForBday
+5316 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property dateForBday
+5316 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=email, insertable=true, updatable=true, unique=false}
+5318 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property email with lazy=false
+5318 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.ContactData:email]
+5318 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for email
+5319 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property email
+5319 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=email2, insertable=true, updatable=true, unique=false}
+5319 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property email2 with lazy=false
+5319 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.ContactData:email2]
+5319 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for email2
+5319 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property email2
+5319 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=email3, insertable=true, updatable=true, unique=false}
+5320 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property email3 with lazy=false
+5320 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.ContactData:email3]
+5320 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for email3
+5320 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property email3
+5320 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=firstname, insertable=true, updatable=true, unique=false}
+5320 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+5321 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.ContactData:firstName]
+5321 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for firstName
+5321 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property firstName
+5321 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=home, insertable=true, updatable=true, unique=false}
+5321 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property home with lazy=false
+5321 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.ContactData:home]
+5321 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for home
+5321 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property home
+5322 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=lastname, insertable=true, updatable=true, unique=false}
+5322 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+5322 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.ContactData:lastName]
+5322 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for lastName
+5322 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property lastName
+5323 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=middleName, insertable=true, updatable=true, unique=false}
+5323 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property middleName with lazy=false
+5323 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.ContactData:middleName]
+5323 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for middleName
+5323 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property middleName
+5323 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=mobile, insertable=true, updatable=true, unique=false}
+5323 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property mobile with lazy=false
+5324 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.ContactData:mobile]
+5324 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for mobile
+5324 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property mobile
+5324 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=bmonth, insertable=true, updatable=true, unique=false}
+5324 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property monthForBday with lazy=false
+5324 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.ContactData:monthForBday]
+5324 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for monthForBday
+5324 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property monthForBday
+5325 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=photo, insertable=true, updatable=true, unique=false}
+5325 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property photo with lazy=false
+5353 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.ContactData:photo]
+5354 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for photo
+5354 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property photo
+5354 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=work, insertable=true, updatable=true, unique=false}
+5354 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property work with lazy=false
+5354 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.ContactData:work]
+5355 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for work
+5355 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property work
+5355 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=byear, insertable=true, updatable=true, unique=false}
+5355 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property yearForBday with lazy=false
+5356 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.adressbook.model.ContactData:yearForBday]
+5358 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for yearForBday
+5358 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property yearForBday
+5360 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+5361 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for footer
+5361 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for header
+5361 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for name
+5361 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+5361 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for address
+5362 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for dateForBday
+5362 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for email
+5362 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for email2
+5362 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for email3
+5362 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for firstName
+5362 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for home
+5362 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for lastName
+5362 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for middleName
+5362 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for mobile
+5362 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for monthForBday
+5362 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for photo
+5362 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for work
+5362 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for yearForBday
+5367 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [group_id] to be non-null as it is part of the primary key for table [group_list]
+5367 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [addressbook]
+5494 [main] DEBUG o.h.internal.SessionFactoryImpl - Building session factory
+5496 [main] DEBUG org.hibernate.cfg.Settings - SessionFactory name : null
+5496 [main] DEBUG org.hibernate.cfg.Settings - Automatic flush during beforeCompletion(): enabled
+5496 [main] DEBUG org.hibernate.cfg.Settings - Automatic session close at end of transaction: disabled
+5496 [main] DEBUG org.hibernate.cfg.Settings - Statistics: disabled
+5496 [main] DEBUG org.hibernate.cfg.Settings - Deleted entity synthetic identifier rollback: disabled
+5496 [main] DEBUG org.hibernate.cfg.Settings - Default entity-mode: pojo
+5496 [main] DEBUG org.hibernate.cfg.Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+5496 [main] DEBUG org.hibernate.cfg.Settings - Allow initialization of lazy state outside session : disabled
+5496 [main] DEBUG org.hibernate.cfg.Settings - Using BatchFetchStyle : LEGACY
+5496 [main] DEBUG org.hibernate.cfg.Settings - Default batch fetch size: -1
+5497 [main] DEBUG org.hibernate.cfg.Settings - Maximum outer join fetch depth: 2
+5497 [main] DEBUG org.hibernate.cfg.Settings - Default null ordering: NONE
+5497 [main] DEBUG org.hibernate.cfg.Settings - Order SQL updates by primary key: disabled
+5497 [main] DEBUG org.hibernate.cfg.Settings - Order SQL inserts for batching: disabled
+5497 [main] DEBUG org.hibernate.cfg.Settings - multi-tenancy strategy : NONE
+5497 [main] DEBUG org.hibernate.cfg.Settings - JTA Track by Thread: enabled
+5497 [main] DEBUG org.hibernate.cfg.Settings - Query language substitutions: {}
+5497 [main] DEBUG org.hibernate.cfg.Settings - Named query checking : enabled
+5497 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache: disabled
+5497 [main] DEBUG org.hibernate.cfg.Settings - Second-level query cache: disabled
+5498 [main] DEBUG org.hibernate.cfg.Settings - Second-level query cache factory: null
+5498 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache region prefix: null
+5498 [main] DEBUG org.hibernate.cfg.Settings - Optimize second-level cache for minimal puts: disabled
+5498 [main] DEBUG org.hibernate.cfg.Settings - Structured second-level cache entries: disabled
+5498 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache direct-reference entries: disabled
+5498 [main] DEBUG org.hibernate.cfg.Settings - Automatic eviction of collection cache: disabled
+5498 [main] DEBUG org.hibernate.cfg.Settings - JDBC batch size: 15
+5498 [main] DEBUG org.hibernate.cfg.Settings - JDBC batch updates for versioned data: enabled
+5498 [main] DEBUG org.hibernate.cfg.Settings - Scrollable result sets: enabled
+5498 [main] DEBUG org.hibernate.cfg.Settings - Wrap result sets: disabled
+5498 [main] DEBUG org.hibernate.cfg.Settings - JDBC3 getGeneratedKeys(): enabled
+5499 [main] DEBUG org.hibernate.cfg.Settings - JDBC result set fetch size: null
+5499 [main] DEBUG org.hibernate.cfg.Settings - Connection release mode: AFTER_TRANSACTION
+5499 [main] DEBUG org.hibernate.cfg.Settings - Generate SQL with comments: disabled
+5499 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - query : 
+5499 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - closed-handling : 
+5499 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - lists : 
+5499 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - transactions : 
+5762 [main] DEBUG o.h.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+5762 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, dialect=org.hibernate.dialect.MySQL5Dialect, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, java.class.path=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.1.3\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.1.3\plugins\testng\lib\testng-plugin.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\rt.jar;C:\devel_java\addressbook-web-tests\out\test\classes;C:\devel_java\addressbook-web-tests\out\test\resources;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.testng\testng\6.9.10\6feb3e964aeb7097aff30c372aac3ec0f8d87ede\testng-6.9.10.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-java\3.14.0\5b50d4072e0e51779b6e9f3594106312061bfde\selenium-java-3.14.0.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.hamcrest\java-hamcrest\2.0.0.0\f1c8853ade0ecf707f5a261c830e98893983813\java-hamcrest-2.0.0.0.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\com.beust\jcommander\1.72\6375e521c1e11d6563d4f25a07ce124ccf8cd171\jcommander-1.72.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\com.thoughtworks.xstream\xstream\1.4.11.1\6c120c45a8c480bb2fea5b56502e3993ddd74fd2\xstream-1.4.11.1.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.5\f645ed69d595b24d4cf8b3fbb64cc505bede8829\gson-2.8.5.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-classic\1.2.3\7c4f3c474fb2c041d8028740440937705ebb473a\logback-classic-1.2.3.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\mysql\mysql-connector-java\8.0.16\6088b7a25188ab4b3ab865422a8ec77ade29236\mysql-connector-java-8.0.16.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.hibernate\hibernate-agroal\5.3.10.Final\6115c6de18051956a82c6e24a2958ce7b5b43b1b\hibernate-agroal-5.3.10.Final.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.beanshell\bsh\2.0b4\a05f0a0feefa8d8467ac80e16e7de071489f0d9c\bsh-2.0b4.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-chrome-driver\3.14.0\a8fa5d063821f70dab0b7170d4b814ef49ce4962\selenium-chrome-driver-3.14.0.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-edge-driver\3.14.0\ca62365ff82c8c03861848355932ab36ddd73f57\selenium-edge-driver-3.14.0.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-firefox-driver\3.14.0\f35ddc0b5e0e09be644df14ada85d83e6b8b3f3c\selenium-firefox-driver-3.14.0.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-ie-driver\3.14.0\3c92cd026f08d381aa9cff8eca03962add562577\selenium-ie-driver-3.14.0.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-opera-driver\3.14.0\123ae21ad13ecc888bf3e18d5c65857df32e6a9f\selenium-opera-driver-3.14.0.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-safari-driver\3.14.0\8dade249fbfc6833697592c155638f348de10fbd\selenium-safari-driver-3.14.0.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-support\3.14.0\2a8bfbe41c44a14f5674ea7bbcfc577259d34f99\selenium-support-3.14.0.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-remote-driver\3.14.0\434c26e9df775d8f49619f7275a65a36d2d72ceb\selenium-remote-driver-3.14.0.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-api\3.14.0\73e6db9b3cdc42966679a2112bfde9efbef16223\selenium-api-3.14.0.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.hibernate\hibernate-core\5.3.10.Final\e608b854325005edbf43cb2b6041fdafd3f2eb57\hibernate-core-5.3.10.Final.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.9.5\38ceb06ae54ba0524d14a85fe84ed03aecef5078\byte-buddy-1.9.5.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-exec\1.3\8dfb9facd0830a27b1b5f29f84593f0aeee7773b\commons-exec-1.3.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.5.5\1603dfd56ebcd583ccdf337b6c3984ac55d89e58\httpclient-4.5.5.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.10\4b95f4897fa13f2cd904aee711aeafc0c5295cd8\commons-codec-1.10.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.2\4bfc12adfe4842bf07b657f0369c4cb522955686\commons-logging-1.2.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\25.0-jre\7319c34fa5866a85b6bad445adad69d402323129\guava-25.0-jre.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.4.9\a86ce739e5a7175b4b234c290a00a5fdb80957a0\httpcore-4.4.9.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.10.0\7ef0f1d95bf4c0b3ba30bbae25e0e562b05cf75e\okhttp-3.10.0.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.14.1\3bd22672d0999a1a4d13b542b5dd855a89e69993\okio-1.14.1.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\xmlpull\xmlpull\1.1.3.1\2b8e230d2ab644e4ecaa94db7cdedbc40c805dfa\xmlpull-1.1.3.1.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\xpp3\xpp3_min\1.1.4c\19d4e90b43059058f6e056f794f0ea4030d60b86\xpp3_min-1.1.4c.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-core\1.2.3\864344400c3d4d92dfeb0a305dc87d953677c03c\logback-core-1.2.3.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.25\da76ca59f6a57ee3102f8f9bd9cee742973efa8a\slf4j-api-1.7.25.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\com.google.protobuf\protobuf-java\3.6.1\d06d46ecfd92ec6d0f3b423b4cd81cb38d8b924\protobuf-java-3.6.1.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\io.agroal\agroal-pool\0.4\dd834bc5cd04e1ce97ffb392672d0f19eedf0dc5\agroal-pool-0.4.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.hibernate.common\hibernate-commons-annotations\5.0.4.Final\965a18fdf939ee75e41f7918532d37b3a8350535\hibernate-commons-annotations-5.0.4.Final.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.jboss.logging\jboss-logging\3.3.2.Final\3789d00e859632e6c6206adc0c71625559e6e3b0\jboss-logging-3.3.2.Final.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\io.agroal\agroal-api\0.4\54efeee8dd41c9b619f12cebcc2637e7ff46fab5\agroal-api-0.4.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\1.3.9\40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf\jsr305-1.3.9.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-compat-qual\2.0.0\fc89b03860d11d6213d0154a62bcd1c2f69b9efa\checker-compat-qual-2.0.0.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.1.3\39b109f2cd352b2d71b52a3b5a1a9850e1dc304b\error_prone_annotations-2.1.3.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\com.google.j2objc\j2objc-annotations\1.1\ed28ded51a8b1c6b112568def5f4b455e6809019\j2objc-annotations-1.1.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.codehaus.mojo\animal-sniffer-annotations\1.14\775b7e22fb10026eed3f86e8dc556dfafe35f2d5\animal-sniffer-annotations-1.14.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\javax.persistence\javax.persistence-api\2.2\25665ac8c0b62f50e6488173233239120fc52c96\javax.persistence-api-2.2.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.javassist\javassist\3.23.2-GA\c5afe660a95e87ceb518e4f5cf02f5c56b547683\javassist-3.23.2-GA.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\antlr\antlr\2.7.7\83cd2cd674a217ade95a4bb83a8a14f351f48bd0\antlr-2.7.7.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.jboss.spec.javax.transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\a8485cab9484dda36e9a8c319e76b5cc18797b58\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.jboss\jandex\2.0.5.Final\7060f67764565b9ee9d467e3ed0cb8a9c601b23a\jandex-2.0.5.Final.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\com.fasterxml\classmate\1.3.4\3d5f48f10bbe4eb7bd862f10c0583be2e0053c6\classmate-1.3.4.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\javax.activation\javax.activation-api\1.2.0\85262acf3ca9816f9537ca47d5adeabaead7cb16\javax.activation-api-1.2.0.jar;C:\Users\User\.gradle\caches\modules-2\files-2.1\org.dom4j\dom4j\2.1.1\3dce5dbb3571aa820c677fadd8349bfa8f00c199\dom4j-2.1.1.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.1.3\plugins\testng\lib\jcommander-1.27.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.1.3\lib\idea_rt.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, hbm2ddl.auto=validate, user.variant=, java.vendor.url=http://java.oracle.com/, user.timezone=Europe/Moscow, os.name=Windows 10, java.vm.specification.version=1.8, sun.java.launcher=SUN_STANDARD, user.country=RU, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_212\jre\bin, sun.java.command=org.testng.RemoteTestNGStarter -usedefaultlisteners false -socket64930 @w@C:\Users\User\AppData\Local\Temp\idea_working_dirs_testng.tmp -temp C:\Users\User\AppData\Local\Temp\idea_testng.tmp, sun.cpu.endian=little, user.home=C:\Users\User, user.language=ru, java.specification.vendor=Oracle Corporation, hibernate.cache.provider_class=org.hibernate.cache.internal.NoCachingRegionFactory, java.home=C:\Program Files\Java\jdk1.8.0_212\jre, file.separator=\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, cache.provider_class=org.hibernate.cache.internal.NoCachingRegionFactory, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_212\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_212\jre\classes, hibernate.hbm2ddl.auto=validate, user.script=, connection.password=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_212-b10, user.name=User, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_212\jre\lib\endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/addressbook?serverTimezone=UTC, connection.pool_size=1, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, show_sql=true, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=C:\Users\User\AppData\Local\Temp\, java.version=1.8.0_212, user.dir=C:\devel_java\addressbook-web-tests, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@4bf3798b, java.library.path=C:\Program Files\Java\jdk1.8.0_212\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ImageMagick;C:\ImageMagick;C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\apache-maven-3.5.4\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_212\bin;C:\tools;C:\Users\User\Anaconda3;C:\Users\User\Anaconda3\Library\mingw-w64\bin;C:\Users\User\Anaconda3\Library\usr\bin;C:\Users\User\Anaconda3\Library\bin;C:\Users\User\Anaconda3\Scripts;C:\Users\User\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\User\AppData\Local\Programs\Python\Python37-32\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Yarn\bin;C:\Users\User\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.1.3\bin;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\Microsoft VS Code\bin;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=25.212-b10, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_212\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, hibernate.connection.pool_size=1, connection.url=jdbc:mysql://localhost:3306/addressbook?serverTimezone=UTC, java.class.version=52.0}
+5803 [main] DEBUG o.h.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+5807 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiated session factory
+5808 [main] DEBUG o.h.t.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@24ba9639] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@675d8c96]
+5970 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [ru.stqa.pft.adressbook.model.ContactData] is safe
+5971 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.stqa.pft.adressbook.model.ContactData
+6056 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [ru.stqa.pft.adressbook.model.ContactData] is safe
+6056 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.stqa.pft.adressbook.model.ContactData
+7194 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [ru.stqa.pft.adressbook.model.GroupData] is safe
+7194 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.stqa.pft.adressbook.model.GroupData
+7194 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [ru.stqa.pft.adressbook.model.GroupData] is safe
+7194 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.stqa.pft.adressbook.model.GroupData
+7240 [main] DEBUG o.h.p.e.AbstractEntityPersister - Static SQL for entity: ru.stqa.pft.adressbook.model.ContactData
+7240 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Version select: select id from addressbook where id =?
+7240 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Snapshot select: select contactdat_.id, contactdat_.address as address2_0_, contactdat_.bday as bday3_0_, contactdat_.email as email4_0_, contactdat_.email2 as email5_0_, contactdat_.email3 as email6_0_, contactdat_.firstname as firstnam7_0_, contactdat_.home as home8_0_, contactdat_.lastname as lastname9_0_, contactdat_.middleName as middleN10_0_, contactdat_.mobile as mobile11_0_, contactdat_.bmonth as bmonth12_0_, contactdat_.photo as photo13_0_, contactdat_.work as work14_0_, contactdat_.byear as byear15_0_ from addressbook contactdat_ where contactdat_.id=?
+7241 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Insert 0: insert into addressbook (address, bday, email, email2, email3, firstname, home, lastname, middleName, mobile, bmonth, photo, work, byear, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+7241 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Update 0: update addressbook set address=?, bday=?, email=?, email2=?, email3=?, firstname=?, home=?, lastname=?, middleName=?, mobile=?, bmonth=?, photo=?, work=?, byear=? where id=?
+7241 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Delete 0: delete from addressbook where id=?
+7299 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3887cf88]
+7303 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+7304 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : dateForBday
+7304 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email
+7304 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email2
+7304 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email3
+7304 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstName
+7305 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : home
+7306 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastName
+7308 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : middleName
+7308 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobile
+7308 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : monthForBday
+7308 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : photo
+7308 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : work
+7308 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : yearForBday
+7308 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+7339 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+7360 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=ru.stqa.pft.adressbook.model.ContactData)
+    - Returns
+       - EntityReturnImpl(entity=ru.stqa.pft.adressbook.model.ContactData, querySpaceUid=<gen:0>, path=ru.stqa.pft.adressbook.model.ContactData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ru.stqa.pft.adressbook.model.ContactData)
+          - SQL table alias mapping - contactdat0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+7363 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity ru.stqa.pft.adressbook.model.ContactData [NONE]: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.bday as bday3_0_0_, contactdat0_.email as email4_0_0_, contactdat0_.email2 as email5_0_0_, contactdat0_.email3 as email6_0_0_, contactdat0_.firstname as firstnam7_0_0_, contactdat0_.home as home8_0_0_, contactdat0_.lastname as lastname9_0_0_, contactdat0_.middleName as middleN10_0_0_, contactdat0_.mobile as mobile11_0_0_, contactdat0_.bmonth as bmonth12_0_0_, contactdat0_.photo as photo13_0_0_, contactdat0_.work as work14_0_0_, contactdat0_.byear as byear15_0_0_ from addressbook contactdat0_ where contactdat0_.id=?
+7363 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3b8ee898]
+7363 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+7363 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : dateForBday
+7364 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email
+7364 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email2
+7364 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email3
+7364 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstName
+7364 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : home
+7364 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastName
+7364 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : middleName
+7364 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobile
+7364 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : monthForBday
+7366 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : photo
+7367 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : work
+7367 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : yearForBday
+7368 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+7368 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+7369 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=ru.stqa.pft.adressbook.model.ContactData)
+    - Returns
+       - EntityReturnImpl(entity=ru.stqa.pft.adressbook.model.ContactData, querySpaceUid=<gen:0>, path=ru.stqa.pft.adressbook.model.ContactData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ru.stqa.pft.adressbook.model.ContactData)
+          - SQL table alias mapping - contactdat0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+7369 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity ru.stqa.pft.adressbook.model.ContactData [READ]: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.bday as bday3_0_0_, contactdat0_.email as email4_0_0_, contactdat0_.email2 as email5_0_0_, contactdat0_.email3 as email6_0_0_, contactdat0_.firstname as firstnam7_0_0_, contactdat0_.home as home8_0_0_, contactdat0_.lastname as lastname9_0_0_, contactdat0_.middleName as middleN10_0_0_, contactdat0_.mobile as mobile11_0_0_, contactdat0_.bmonth as bmonth12_0_0_, contactdat0_.photo as photo13_0_0_, contactdat0_.work as work14_0_0_, contactdat0_.byear as byear15_0_0_ from addressbook contactdat0_ where contactdat0_.id=?
+7427 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity ru.stqa.pft.adressbook.model.ContactData: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.bday as bday3_0_0_, contactdat0_.email as email4_0_0_, contactdat0_.email2 as email5_0_0_, contactdat0_.email3 as email6_0_0_, contactdat0_.firstname as firstnam7_0_0_, contactdat0_.home as home8_0_0_, contactdat0_.lastname as lastname9_0_0_, contactdat0_.middleName as middleN10_0_0_, contactdat0_.mobile as mobile11_0_0_, contactdat0_.bmonth as bmonth12_0_0_, contactdat0_.photo as photo13_0_0_, contactdat0_.work as work14_0_0_, contactdat0_.byear as byear15_0_0_ from addressbook contactdat0_ where contactdat0_.id=?
+7427 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity ru.stqa.pft.adressbook.model.ContactData: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.bday as bday3_0_0_, contactdat0_.email as email4_0_0_, contactdat0_.email2 as email5_0_0_, contactdat0_.email3 as email6_0_0_, contactdat0_.firstname as firstnam7_0_0_, contactdat0_.home as home8_0_0_, contactdat0_.lastname as lastname9_0_0_, contactdat0_.middleName as middleN10_0_0_, contactdat0_.mobile as mobile11_0_0_, contactdat0_.bmonth as bmonth12_0_0_, contactdat0_.photo as photo13_0_0_, contactdat0_.work as work14_0_0_, contactdat0_.byear as byear15_0_0_ from addressbook contactdat0_ where contactdat0_.id=?
+7428 [main] DEBUG o.h.p.e.AbstractEntityPersister - Static SQL for entity: ru.stqa.pft.adressbook.model.GroupData
+7428 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Version select: select group_id from group_list where group_id =?
+7428 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Snapshot select: select groupdata_.group_id, groupdata_.group_footer as group_fo2_1_, groupdata_.group_header as group_he3_1_, groupdata_.group_name as group_na4_1_ from group_list groupdata_ where groupdata_.group_id=?
+7428 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Insert 0: insert into group_list (group_footer, group_header, group_name, group_id) values (?, ?, ?, ?)
+7428 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Update 0: update group_list set group_footer=?, group_header=?, group_name=? where group_id=?
+7428 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Delete 0: delete from group_list where group_id=?
+7429 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@757194dc]
+7429 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+7429 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+7429 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+7429 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+7429 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+7429 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=ru.stqa.pft.adressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=ru.stqa.pft.adressbook.model.GroupData, querySpaceUid=<gen:0>, path=ru.stqa.pft.adressbook.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ru.stqa.pft.adressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_1_0_}
+
+7430 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity ru.stqa.pft.adressbook.model.GroupData [NONE]: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+7430 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@14faa38c]
+7430 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+7430 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+7430 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+7430 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+7430 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+7430 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=ru.stqa.pft.adressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=ru.stqa.pft.adressbook.model.GroupData, querySpaceUid=<gen:0>, path=ru.stqa.pft.adressbook.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ru.stqa.pft.adressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_1_0_}
+
+7430 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity ru.stqa.pft.adressbook.model.GroupData [READ]: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+7431 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity ru.stqa.pft.adressbook.model.GroupData: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+7431 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity ru.stqa.pft.adressbook.model.GroupData: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+7537 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6569dded] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+7605 [main] DEBUG o.h.e.t.j.p.i.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+7606 [main] DEBUG o.h.e.t.j.p.i.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+7618 [main] DEBUG o.h.e.t.j.p.i.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+7620 [main] DEBUG o.h.query.spi.NamedQueryRepository - Checking 0 named HQL queries
+7620 [main] DEBUG o.h.query.spi.NamedQueryRepository - Checking 0 named SQL queries
+7624 [main] DEBUG o.h.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@6b580b88
+7628 [main] DEBUG o.h.internal.SessionFactoryRegistry - Registering SessionFactory: 7154daf0-da75-4ba8-be25-48be2e9e0e63 (<unnamed>)
+7628 [main] DEBUG o.h.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+15692 [main] INFO  r.s.pft.adressbook.tests.TestBase - Start test testGroupModificationwith parameters []
+15873 [main] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+15896 [main] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+15896 [main] DEBUG o.h.e.t.internal.TransactionImpl - begin
+15942 [main] DEBUG o.h.h.i.QueryTranslatorFactoryInitiator - QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@124ac145
+15942 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+16026 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - parse() - HQL: from ru.stqa.pft.adressbook.model.GroupData
+16039 [main] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+16054 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       \-[FROM] Node: 'from'
+          \-[RANGE] Node: 'RANGE'
+             \-[DOT] Node: '.'
+                +-[DOT] Node: '.'
+                |  +-[DOT] Node: '.'
+                |  |  +-[DOT] Node: '.'
+                |  |  |  +-[DOT] Node: '.'
+                |  |  |  |  +-[IDENT] Node: 'ru'
+                |  |  |  |  \-[IDENT] Node: 'stqa'
+                |  |  |  \-[IDENT] Node: 'pft'
+                |  |  \-[IDENT] Node: 'adressbook'
+                |  \-[IDENT] Node: 'model'
+                \-[IDENT] Node: 'GroupData'
+
+16118 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+16159 [main] DEBUG o.h.h.internal.ast.tree.FromElement - FromClause{level=1} : ru.stqa.pft.adressbook.model.GroupData (<no alias>) -> groupdata0_
+16159 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+16159 [main] DEBUG o.h.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} group_list groupdata0_ ) )
+16185 [main] DEBUG o.h.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+16202 [main] DEBUG o.h.h.i.ast.util.JoinProcessor - Using FROM fragment [group_list groupdata0_]
+16202 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+16203 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (group_list)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'groupdata0_.group_id as group_id1_1_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=group_list,tableAlias=groupdata0_,origin=null,columns={,className=ru.stqa.pft.adressbook.model.GroupData}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[groupdata0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'group_list groupdata0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=group_list,tableAlias=groupdata0_,origin=null,columns={,className=ru.stqa.pft.adressbook.model.GroupData}}
+
+16203 [main] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+16221 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - HQL: from ru.stqa.pft.adressbook.model.GroupData
+16221 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - SQL: select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+16221 [main] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+16249 [main] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+16316 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+16324 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#23]
+16347 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+16347 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#25]
+16347 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+16348 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#26]
+16348 [main] DEBUG org.hibernate.loader.Loader - Result set row: 3
+16348 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#27]
+16348 [main] DEBUG org.hibernate.loader.Loader - Result set row: 4
+16348 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#28]
+16348 [main] DEBUG org.hibernate.loader.Loader - Result set row: 5
+16348 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#29]
+16348 [main] DEBUG org.hibernate.loader.Loader - Result set row: 6
+16348 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#30]
+16349 [main] DEBUG org.hibernate.loader.Loader - Result set row: 7
+16349 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#31]
+16349 [main] DEBUG org.hibernate.loader.Loader - Result set row: 8
+16349 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#32]
+16349 [main] DEBUG org.hibernate.loader.Loader - Result set row: 9
+16349 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#33]
+16350 [main] DEBUG org.hibernate.loader.Loader - Result set row: 10
+16350 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#34]
+16350 [main] DEBUG org.hibernate.loader.Loader - Result set row: 11
+16350 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#35]
+16350 [main] DEBUG org.hibernate.loader.Loader - Result set row: 12
+16350 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#36]
+16351 [main] DEBUG org.hibernate.loader.Loader - Result set row: 13
+16351 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#37]
+16351 [main] DEBUG org.hibernate.loader.Loader - Result set row: 14
+16351 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#38]
+16351 [main] DEBUG org.hibernate.loader.Loader - Result set row: 15
+16351 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#39]
+16352 [main] DEBUG org.hibernate.loader.Loader - Result set row: 16
+16352 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#40]
+16353 [main] DEBUG org.hibernate.loader.Loader - Result set row: 17
+16353 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#41]
+16354 [main] DEBUG org.hibernate.loader.Loader - Result set row: 18
+16354 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#42]
+16354 [main] DEBUG org.hibernate.loader.Loader - Result set row: 19
+16354 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#43]
+16355 [main] DEBUG org.hibernate.loader.Loader - Result set row: 20
+16355 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#44]
+16356 [main] DEBUG org.hibernate.loader.Loader - Result set row: 21
+16357 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#45]
+16358 [main] DEBUG org.hibernate.loader.Loader - Result set row: 22
+16358 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#46]
+16358 [main] DEBUG org.hibernate.loader.Loader - Result set row: 23
+16358 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#47]
+16358 [main] DEBUG org.hibernate.loader.Loader - Result set row: 24
+16359 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#48]
+16359 [main] DEBUG org.hibernate.loader.Loader - Result set row: 25
+16359 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#49]
+16359 [main] DEBUG org.hibernate.loader.Loader - Result set row: 26
+16359 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#50]
+16359 [main] DEBUG org.hibernate.loader.Loader - Result set row: 27
+16359 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#51]
+16361 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#23]
+16370 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#23]
+16370 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#25]
+16370 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#25]
+16370 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#26]
+16370 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#26]
+16370 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#27]
+16370 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#27]
+16370 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#28]
+16370 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#28]
+16371 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#29]
+16371 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#29]
+16371 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#30]
+16372 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#30]
+16372 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#31]
+16372 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#31]
+16372 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#32]
+16372 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#32]
+16372 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#33]
+16372 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#33]
+16373 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#34]
+16373 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#34]
+16373 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#35]
+16373 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#35]
+16373 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#36]
+16373 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#36]
+16373 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#37]
+16374 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#37]
+16376 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#38]
+16376 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#38]
+16376 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#39]
+16376 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#39]
+16389 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#40]
+16389 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#40]
+16390 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#41]
+16390 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#41]
+16390 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#42]
+16390 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#42]
+16390 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#43]
+16390 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#43]
+16390 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#44]
+16390 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#44]
+16390 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#45]
+16390 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#45]
+16390 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#46]
+16390 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#46]
+16390 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#47]
+16390 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#47]
+16390 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#48]
+16391 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#48]
+16391 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#49]
+16391 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#49]
+16391 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#50]
+16391 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#50]
+16391 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#51]
+16391 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#51]
+16402 [main] DEBUG o.h.e.t.internal.TransactionImpl - committing
+16403 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+16408 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+16412 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 28 objects
+16412 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+16416 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+16416 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=28}
+16417 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=29}
+16417 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=30}
+16417 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=31}
+16417 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=32}
+16417 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=33}
+16417 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=34}
+16417 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=35}
+16418 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=24, name=1st, header=_332, id=23}
+16418 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 3, name=T3st, header=header 3, id=25}
+16419 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 4, name=T4st, header=header 4, id=26}
+16419 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=27}
+16419 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=44}
+16419 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=45}
+16419 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=24, name=1st, header=_332, id=46}
+16420 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=47}
+16421 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=48}
+16421 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=49}
+16421 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=50}
+16421 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=51}
+16421 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=36}
+16421 [main] DEBUG o.h.internal.util.EntityPrinter - More......
+16423 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+16424 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+16432 [main] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+16432 [main] DEBUG o.h.e.t.internal.TransactionImpl - begin
+16437 [main] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+16440 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+16440 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#23]
+16440 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+16440 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#25]
+16440 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+16440 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#26]
+16441 [main] DEBUG org.hibernate.loader.Loader - Result set row: 3
+16441 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#27]
+16441 [main] DEBUG org.hibernate.loader.Loader - Result set row: 4
+16441 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#28]
+16441 [main] DEBUG org.hibernate.loader.Loader - Result set row: 5
+16441 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#29]
+16441 [main] DEBUG org.hibernate.loader.Loader - Result set row: 6
+16441 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#30]
+16441 [main] DEBUG org.hibernate.loader.Loader - Result set row: 7
+16441 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#31]
+16442 [main] DEBUG org.hibernate.loader.Loader - Result set row: 8
+16442 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#32]
+16442 [main] DEBUG org.hibernate.loader.Loader - Result set row: 9
+16442 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#33]
+16442 [main] DEBUG org.hibernate.loader.Loader - Result set row: 10
+16442 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#34]
+16442 [main] DEBUG org.hibernate.loader.Loader - Result set row: 11
+16442 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#35]
+16442 [main] DEBUG org.hibernate.loader.Loader - Result set row: 12
+16442 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#36]
+16442 [main] DEBUG org.hibernate.loader.Loader - Result set row: 13
+16442 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#37]
+16443 [main] DEBUG org.hibernate.loader.Loader - Result set row: 14
+16443 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#38]
+16443 [main] DEBUG org.hibernate.loader.Loader - Result set row: 15
+16443 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#39]
+16443 [main] DEBUG org.hibernate.loader.Loader - Result set row: 16
+16443 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#40]
+16443 [main] DEBUG org.hibernate.loader.Loader - Result set row: 17
+16443 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#41]
+16444 [main] DEBUG org.hibernate.loader.Loader - Result set row: 18
+16444 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#42]
+16444 [main] DEBUG org.hibernate.loader.Loader - Result set row: 19
+16444 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#43]
+16444 [main] DEBUG org.hibernate.loader.Loader - Result set row: 20
+16444 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#44]
+16444 [main] DEBUG org.hibernate.loader.Loader - Result set row: 21
+16444 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#45]
+16444 [main] DEBUG org.hibernate.loader.Loader - Result set row: 22
+16444 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#46]
+16445 [main] DEBUG org.hibernate.loader.Loader - Result set row: 23
+16445 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#47]
+16445 [main] DEBUG org.hibernate.loader.Loader - Result set row: 24
+16445 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#48]
+16445 [main] DEBUG org.hibernate.loader.Loader - Result set row: 25
+16445 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#49]
+16445 [main] DEBUG org.hibernate.loader.Loader - Result set row: 26
+16445 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#50]
+16446 [main] DEBUG org.hibernate.loader.Loader - Result set row: 27
+16446 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#51]
+16446 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#23]
+16446 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#23]
+16446 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#25]
+16446 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#25]
+16446 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#26]
+16446 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#26]
+16446 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#27]
+16446 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#27]
+16446 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#28]
+16447 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#28]
+16447 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#29]
+16447 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#29]
+16447 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#30]
+16447 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#30]
+16447 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#31]
+16447 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#31]
+16447 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#32]
+16447 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#32]
+16447 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#33]
+16447 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#33]
+16447 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#34]
+16447 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#34]
+16447 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#35]
+16447 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#35]
+16448 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#36]
+16448 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#36]
+16448 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#37]
+16448 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#37]
+16448 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#38]
+16448 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#38]
+16448 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#39]
+16448 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#39]
+16448 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#40]
+16448 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#40]
+16448 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#41]
+16448 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#41]
+16448 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#42]
+16448 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#42]
+16448 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#43]
+16448 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#43]
+16448 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#44]
+16449 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#44]
+16449 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#45]
+16449 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#45]
+16449 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#46]
+16449 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#46]
+16449 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#47]
+16449 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#47]
+16449 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#48]
+16449 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#48]
+16449 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#49]
+16449 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#49]
+16449 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#50]
+16449 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#50]
+16449 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#51]
+16449 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#51]
+16450 [main] DEBUG o.h.e.t.internal.TransactionImpl - committing
+16450 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+16450 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+16451 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 28 objects
+16451 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=28}
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=29}
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=30}
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=31}
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=32}
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=33}
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=34}
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=35}
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=24, name=1st, header=_332, id=23}
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 3, name=T3st, header=header 3, id=25}
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 4, name=T4st, header=header 4, id=26}
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=27}
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=44}
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=45}
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=24, name=1st, header=_332, id=46}
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=47}
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=48}
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=49}
+16451 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=50}
+16452 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=51}
+16452 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=36}
+16452 [main] DEBUG o.h.internal.util.EntityPrinter - More......
+16453 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+16454 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+19469 [main] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+19469 [main] DEBUG o.h.e.t.internal.TransactionImpl - begin
+19471 [main] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+19472 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+19472 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#23]
+19473 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+19474 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#25]
+19474 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+19475 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#26]
+19475 [main] DEBUG org.hibernate.loader.Loader - Result set row: 3
+19475 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#27]
+19475 [main] DEBUG org.hibernate.loader.Loader - Result set row: 4
+19475 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#28]
+19475 [main] DEBUG org.hibernate.loader.Loader - Result set row: 5
+19475 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#29]
+19475 [main] DEBUG org.hibernate.loader.Loader - Result set row: 6
+19476 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#30]
+19476 [main] DEBUG org.hibernate.loader.Loader - Result set row: 7
+19476 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#31]
+19476 [main] DEBUG org.hibernate.loader.Loader - Result set row: 8
+19476 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#32]
+19476 [main] DEBUG org.hibernate.loader.Loader - Result set row: 9
+19476 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#33]
+19476 [main] DEBUG org.hibernate.loader.Loader - Result set row: 10
+19477 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#34]
+19477 [main] DEBUG org.hibernate.loader.Loader - Result set row: 11
+19477 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#35]
+19477 [main] DEBUG org.hibernate.loader.Loader - Result set row: 12
+19477 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#36]
+19477 [main] DEBUG org.hibernate.loader.Loader - Result set row: 13
+19477 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#37]
+19477 [main] DEBUG org.hibernate.loader.Loader - Result set row: 14
+19477 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#38]
+19478 [main] DEBUG org.hibernate.loader.Loader - Result set row: 15
+19478 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#39]
+19478 [main] DEBUG org.hibernate.loader.Loader - Result set row: 16
+19478 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#40]
+19478 [main] DEBUG org.hibernate.loader.Loader - Result set row: 17
+19478 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#41]
+19478 [main] DEBUG org.hibernate.loader.Loader - Result set row: 18
+19478 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#42]
+19478 [main] DEBUG org.hibernate.loader.Loader - Result set row: 19
+19479 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#43]
+19479 [main] DEBUG org.hibernate.loader.Loader - Result set row: 20
+19480 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#44]
+19481 [main] DEBUG org.hibernate.loader.Loader - Result set row: 21
+19481 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#45]
+19481 [main] DEBUG org.hibernate.loader.Loader - Result set row: 22
+19481 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#46]
+19481 [main] DEBUG org.hibernate.loader.Loader - Result set row: 23
+19481 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#47]
+19481 [main] DEBUG org.hibernate.loader.Loader - Result set row: 24
+19482 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#48]
+19482 [main] DEBUG org.hibernate.loader.Loader - Result set row: 25
+19482 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#49]
+19482 [main] DEBUG org.hibernate.loader.Loader - Result set row: 26
+19482 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#50]
+19482 [main] DEBUG org.hibernate.loader.Loader - Result set row: 27
+19482 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.adressbook.model.GroupData#51]
+19482 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#23]
+19482 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#23]
+19482 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#25]
+19482 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#25]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#26]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#26]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#27]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#27]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#28]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#28]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#29]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#29]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#30]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#30]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#31]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#31]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#32]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#32]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#33]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#33]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#34]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#34]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#35]
+19483 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#35]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#36]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#36]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#37]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#37]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#38]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#38]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#39]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#39]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#40]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#40]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#41]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#41]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#42]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#42]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#43]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#43]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#44]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#44]
+19484 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#45]
+19485 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#45]
+19485 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#46]
+19485 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#46]
+19485 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#47]
+19485 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#47]
+19485 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#48]
+19485 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#48]
+19485 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#49]
+19485 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#49]
+19485 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#50]
+19485 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#50]
+19485 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.pft.adressbook.model.GroupData#51]
+19486 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.adressbook.model.GroupData#51]
+19487 [main] DEBUG o.h.e.t.internal.TransactionImpl - committing
+19487 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+19487 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+19491 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 28 objects
+19492 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=28}
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=29}
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=30}
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=31}
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=32}
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=33}
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=34}
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=35}
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=24, name=1st, header=_332, id=23}
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 3, name=T3st, header=header 3, id=25}
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 4, name=T4st, header=header 4, id=26}
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=27}
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=44}
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=45}
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=24, name=1st, header=_332, id=46}
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=47}
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=48}
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=24, name=1st, header=_332, id=49}
+19492 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=50}
+19493 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=51}
+19493 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.adressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=36}
+19493 [main] DEBUG o.h.internal.util.EntityPrinter - More......
+19498 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+19500 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+19502 [main] INFO  r.s.pft.adressbook.tests.TestBase - End test testGroupModificationwith parameters []
