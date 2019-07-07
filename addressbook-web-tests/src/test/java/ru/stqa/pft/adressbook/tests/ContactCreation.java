@@ -2,7 +2,6 @@ package ru.stqa.pft.adressbook.tests;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.thoughtworks.xstream.XStream;
 import org.testng.annotations.*;
 import ru.stqa.pft.adressbook.model.ContactData;
 import ru.stqa.pft.adressbook.model.Contacts;
@@ -15,7 +14,6 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -42,11 +40,10 @@ public class ContactCreation extends TestBase{
 
   @Test(dataProvider = "validContactsFromJson")
   public void ContactCreation(ContactData contact) throws Exception {
-    Contacts before = app.contact().all();
-    File photo = new File("src/test/resources/mugi.png");
-    app.contact().create(contact.withPhoto(photo), true);
+    Contacts before = app.db().contacts();
+    app.contact().create(contact, true);
     assertThat(app.contact().count(), equalTo(before.size() + 1));
-    Contacts after = app.contact().all();
+    Contacts after = app.db().contacts();
     assertThat(after, equalTo(before.withAdded
             (contact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));
   }

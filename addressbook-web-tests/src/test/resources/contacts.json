@@ -30,21 +30,5 @@
     "email2": "mailNumber1@gmail.com",
     "email3": "mailNumber1@rambler.ru",
     "address": "Улица Пушкина Дом 1"
-  },
-  {
-    "firstName": "Пётр 2",
-    "middleName": "Алеексеевич 2",
-    "lastName": "Габрилянов 2",
-    "dateForBday": "12",
-    "monthForBday": "May",
-    "yearForBday": "1992",
-    "group": "test 0",
-    "home": "89120998877",
-    "mobile": "89160998872",
-    "work": "2916099887",
-    "email": "mailNumber2@mail.ru",
-    "email2": "mailNumber2@gmail.com",
-    "email3": "mailNumber2@rambler.ru",
-    "address": "Улица Пушкина Дом 2"
   }
 ]

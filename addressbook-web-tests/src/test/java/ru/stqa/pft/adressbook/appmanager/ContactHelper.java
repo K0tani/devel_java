@@ -92,9 +92,9 @@ public class ContactHelper extends HelperBase {
     wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
   }
 
-  public void modify(ContactData contact) {
+  public void modify(ContactData contact,boolean creation) {
     editContactById(contact.getId());
-    fillContact(contact, false);
+    fillContact(contact, creation);
     updateContact();
     contactCache = null;
     goToHomePage();

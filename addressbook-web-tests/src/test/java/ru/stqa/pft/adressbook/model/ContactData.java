@@ -92,8 +92,13 @@ public class ContactData {
     @Column(name = "photo")
     private String photo;
 
+
     public File getPhoto() {
-        return new File(photo);
+        if (photo != null) {
+            return new File(photo);
+        } else {
+            return null;
+        }
     }
 
     public ContactData withPhoto(File photo) {
@@ -258,7 +263,6 @@ public class ContactData {
         return this;
     }
 
-
     @Override
     public String toString() {
         return "ContactData{" +
@@ -284,14 +288,25 @@ public class ContactData {
         ContactData that = (ContactData) o;
         return id == that.id &&
                 Objects.equals(firstName, that.firstName) &&
-                Objects.equals(lastName, that.lastName);
+                Objects.equals(middleName, that.middleName) &&
+                Objects.equals(lastName, that.lastName) &&
+                Objects.equals(dateForBday, that.dateForBday) &&
+                Objects.equals(monthForBday, that.monthForBday) &&
+                Objects.equals(yearForBday, that.yearForBday) &&
+                Objects.equals(home, that.home) &&
+                Objects.equals(mobile, that.mobile) &&
+                Objects.equals(work, that.work) &&
+                Objects.equals(email, that.email) &&
+                Objects.equals(email2, that.email2) &&
+                Objects.equals(email3, that.email3) &&
+                Objects.equals(allPhones, that.allPhones) &&
+                Objects.equals(address, that.address) &&
+                Objects.equals(allEmails, that.allEmails);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName);
+        return Objects.hash(id, firstName, middleName, lastName, dateForBday, monthForBday, yearForBday, home, mobile, work, email, email2, email3, allPhones, address, allEmails);
     }
-
-
 }
 
