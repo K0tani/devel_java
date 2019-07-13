@@ -1,12 +1,13 @@
 package ru.stqa.pft.adressbook.model;
 
 import java.io.File;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import org.hibernate.annotations.Type;
-
 import javax.persistence.*;
 
 @XStreamAlias("contact")
@@ -43,9 +44,6 @@ public class ContactData {
     @Type(type = "text")
     private String yearForBday;
 
-    @Expose
-    @Transient
-    private String group;
 
     @Expose
     @Column(name = "home")
@@ -87,24 +85,71 @@ public class ContactData {
     @Transient
     private String allEmails;
 
-    @Expose
-    @Type(type = "text")
-    @Column(name = "photo")
-    private String photo;
+    //@Expose
+    //@Type(type = "text")
+   // @Column(name = "photo")
+   // private String photo;
 
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable (name = "address_in_groups", joinColumns = @JoinColumn(name = "id"),
+            inverseJoinColumns = @JoinColumn(name = "group_id"))
+    private Set<GroupData> groups = new HashSet<GroupData>();
 
-    public File getPhoto() {
-        if (photo != null) {
-            return new File(photo);
-        } else {
-            return null;
-        }
+    @Override
+    public String toString() {
+        return "ContactData{" +
+                "firstname='" + firstName + '\'' +
+                ", lastname='" + lastName + '\'' +
+                ", address='" + address + '\'' +
+                ", home='" + home + '\'' +
+                ", mobile='" + mobile + '\'' +
+                ", work='" + work + '\'' +
+                ", email='" + email + '\'' +
+                ", email2='" + email2 + '\'' +
+                ", email3='" + email3 + '\'' +
+                '}';
     }
 
-    public ContactData withPhoto(File photo) {
-        this.photo = photo.getPath();
-        return this;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ContactData that = (ContactData) o;
+        return id == that.id &&
+                Objects.equals(firstName, that.firstName) &&
+                Objects.equals(middleName, that.middleName) &&
+                Objects.equals(lastName, that.lastName) &&
+                Objects.equals(dateForBday, that.dateForBday) &&
+                Objects.equals(monthForBday, that.monthForBday) &&
+                Objects.equals(yearForBday, that.yearForBday) &&
+                Objects.equals(home, that.home) &&
+                Objects.equals(mobile, that.mobile) &&
+                Objects.equals(work, that.work) &&
+                Objects.equals(email, that.email) &&
+                Objects.equals(email2, that.email2) &&
+                Objects.equals(email3, that.email3) &&
+                Objects.equals(allPhones, that.allPhones) &&
+                Objects.equals(address, that.address) &&
+                Objects.equals(allEmails, that.allEmails) &&
+                Objects.equals(groups, that.groups);
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstName, middleName, lastName, dateForBday, monthForBday, yearForBday, home, mobile, work, email, email2, email3, allPhones, address, allEmails, groups);
+    }
+// public File getPhoto() {
+    //    if (photo != null) {
+    //        return new File(photo);
+   //     } else {
+   //         return null;
+   //     }
+   // }
+
+   // public ContactData withPhoto(File photo) {
+   //     this.photo = photo.getPath();
+   //     return this;
+   // }
 
     public String getDateForBday() {
         return dateForBday;
@@ -192,10 +237,6 @@ public class ContactData {
     }
 
 
-    public String getGroup() {
-        return group;
-    }
-
     public String getHome() {
         return home;
     }
@@ -243,10 +284,6 @@ public class ContactData {
         return this;
     }
 
-    public ContactData withGroup(String group) {
-        this.group = group;
-        return this;
-    }
 
     public ContactData withHome(String home) {
         this.home = home;
@@ -263,50 +300,13 @@ public class ContactData {
         return this;
     }
 
-    @Override
-    public String toString() {
-        return "ContactData{" +
-                "firstname='" + firstName + '\'' +
-                ", lastname='" + lastName + '\'' +
-                ", address='" + address + '\'' +
-                ", home='" + home + '\'' +
-                ", mobile='" + mobile + '\'' +
-                ", work='" + work + '\'' +
-                ", email='" + email + '\'' +
-                ", email2='" + email2 + '\'' +
-                ", email3='" + email3 + '\'' +
-                ", group='" + group + '\'' +
-                ", photo='" + photo + '\'' +
-                '}';
+    public Groups getGroups() {
+        return new Groups(groups);
     }
 
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ContactData that = (ContactData) o;
-        return id == that.id &&
-                Objects.equals(firstName, that.firstName) &&
-                Objects.equals(middleName, that.middleName) &&
-                Objects.equals(lastName, that.lastName) &&
-                Objects.equals(dateForBday, that.dateForBday) &&
-                Objects.equals(monthForBday, that.monthForBday) &&
-                Objects.equals(yearForBday, that.yearForBday) &&
-                Objects.equals(home, that.home) &&
-                Objects.equals(mobile, that.mobile) &&
-                Objects.equals(work, that.work) &&
-                Objects.equals(email, that.email) &&
-                Objects.equals(email2, that.email2) &&
-                Objects.equals(email3, that.email3) &&
-                Objects.equals(allPhones, that.allPhones) &&
-                Objects.equals(address, that.address) &&
-                Objects.equals(allEmails, that.allEmails);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, firstName, middleName, lastName, dateForBday, monthForBday, yearForBday, home, mobile, work, email, email2, email3, allPhones, address, allEmails);
+    public ContactData inGroup(GroupData group) {
+        groups.add(group);
+        return this;
     }
 }
 

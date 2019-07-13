@@ -16,14 +16,15 @@ public class DbHelper {
 
   private final SessionFactory sessionFactory;
 
-  public  DbHelper() {
+  public DbHelper() {
     final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
             .configure().build();
 
     sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
 
   }
-  public Groups groups () {
+
+  public Groups groups() {
     Session session = sessionFactory.openSession();
     session.beginTransaction();
     List<GroupData> result = session.createQuery("from GroupData").list();
@@ -36,6 +37,15 @@ public class DbHelper {
     Session session = sessionFactory.openSession();
     session.beginTransaction();
     List<ContactData> result = session.createQuery("from ContactData where deprecated = '000-00-00'").list();
+    session.getTransaction().commit();
+    session.close();
+    return new Contacts(result);
+  }
+
+  public Contacts contactById(int id) {
+    Session session = sessionFactory.openSession();
+    session.beginTransaction();
+    List<ContactData> result = session.createQuery("from ContactData where id =" + id).list();
     session.getTransaction().commit();
     session.close();
     return new Contacts(result);

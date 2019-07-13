@@ -17,7 +17,7 @@ public class ContactBaseInfo extends TestBase{
     if (app.contact().all().size() == 0) {
       app.contact().create(new ContactData().withFirstName("Пётр").withMiddleName("Алексеевич").withLastName("Габрилян").withAddress("улица Пушкина")
               .withHome("878").withMobile("707").withWork("7873").withEmail("123@gmail.com").withEmail2("423@ya.ru").withEmail3("576@rambler.ru").withDateForBday("31")
-              .withMonthForBday("May").withYearForBday("1966").withGroup("T2st"), true);
+              .withMonthForBday("May").withYearForBday("1966"), true);
     }
   }
 

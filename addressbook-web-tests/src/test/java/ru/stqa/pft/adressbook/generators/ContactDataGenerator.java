@@ -64,8 +64,8 @@ public class ContactDataGenerator {
               .withLastName(String.format("Габрилянов %s", i)).withAddress(String.format("Улица Пушкина Дом %s", i))
               .withHome(String.format("891%s0998877", i)).withMobile(String.format("8916099887%s", i))
               .withWork(String.format("%s916099887", i)).withEmail(String.format("mailNumber%s@mail.ru", i))
-              .withEmail2(String.format("mailNumber%s@gmail.com", i)).withEmail3(String.format("mailNumber%s@rambler.ru", i)).withGroup(String.format("test %s", i))
-              .withDateForBday(String.format("1%s", i)).withMonthForBday("May").withYearForBday(String.format("199%s",i)).withGroup("test 0"));
+              .withEmail2(String.format("mailNumber%s@gmail.com", i)).withEmail3(String.format("mailNumber%s@rambler.ru", i))
+              .withDateForBday(String.format("1%s", i)).withMonthForBday("May").withYearForBday(String.format("199%s",i)));
     }
     return contacts;
 

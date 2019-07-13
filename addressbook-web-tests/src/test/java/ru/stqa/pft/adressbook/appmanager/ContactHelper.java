@@ -7,9 +7,11 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.adressbook.model.ContactData;
 import ru.stqa.pft.adressbook.model.Contacts;
+import ru.stqa.pft.adressbook.model.GroupData;
 
 import java.util.HashSet;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 
 public class ContactHelper extends HelperBase {
@@ -22,7 +24,7 @@ public class ContactHelper extends HelperBase {
     type(By.name("firstname"), contactData.getFirstName());
     type(By.name("middlename"), contactData.getMiddleName());
     type(By.name("lastname"), contactData.getLastName());
-    attach(By.name("photo"),contactData.getPhoto());
+   // attach(By.name("photo"),contactData.getPhoto());
     type(By.name("address"), contactData.getAddress());
     type(By.name("home"), contactData.getHome());
     type(By.name("mobile"), contactData.getMobile());
@@ -35,7 +37,11 @@ public class ContactHelper extends HelperBase {
     type(By.name("byear"), contactData.getYearForBday());
 
     if (creation) {
-      new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+      if (contactData.getGroups().size() > 0) {
+        Assert.assertTrue(contactData.getGroups().size() == 1);
+        new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.
+                getGroups().iterator().next().getName());
+      }
     } else {
       Assert.assertFalse(isElemetPresent(By.name("new_group")));
     }
@@ -191,5 +197,38 @@ public class ContactHelper extends HelperBase {
     WebElement row = checkbox.findElement(By.xpath("./../.."));
     List<WebElement> cells = row.findElements(By.tagName("td"));
     cells.get(7).findElement(By.tagName("a")).click();
+  }
+
+  public void addGroup(ContactData contact, GroupData group) {
+    goToHomePage();
+    selectContactById(contact.getId());
+    selectGroupById(group.getId());
+    click(By.cssSelector("input[type='submit'"));
+    goToHomePage();
+  }
+
+  public void deleteGroup(ContactData contact, GroupData group) {
+    selectExistingGroup(group.getId());
+    selectContactById(contact.getId());
+    click(By.cssSelector("input[name='remove'"));
+    goToHomePage();
+    Select select = new Select(wd.findElement(By.cssSelector("select[name='group'")));
+    select.selectByVisibleText("[all]");
+  }
+
+  private void selectGroupById(int id) {
+    Select select = new Select(wd.findElement(By.cssSelector("select[name='to_group']")));
+    select.selectByValue("" + id);
+  }
+
+  public void selectExistingGroup(int id) {
+    Select select = new Select(wd.findElement(By.cssSelector("select[name='group'")));
+    select.selectByValue("" + id);
+  }
+
+  public String uniqueGroupName() {
+    Random rnd = new Random(System.currentTimeMillis());
+    int i = rnd.nextInt(1000);
+    return "group " + Integer.toString(i);
   }
 }
