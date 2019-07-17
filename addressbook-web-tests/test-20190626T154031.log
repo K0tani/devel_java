@@ -1,6 +1,0 @@
-6912 [main] INFO  r.s.pft.adressbook.tests.TestBase - Start test testGroupCreationwith parameters [GroupData{id='2147483647', name='test 0'}]
-11494 [main] INFO  r.s.pft.adressbook.tests.TestBase - End test testGroupCreationwith parameters [GroupData{id='46', name='test 0'}]
-11495 [main] INFO  r.s.pft.adressbook.tests.TestBase - Start test testGroupCreationwith parameters [GroupData{id='2147483647', name='test 1'}]
-14447 [main] INFO  r.s.pft.adressbook.tests.TestBase - End test testGroupCreationwith parameters [GroupData{id='47', name='test 1'}]
-14447 [main] INFO  r.s.pft.adressbook.tests.TestBase - Start test testGroupCreationwith parameters [GroupData{id='2147483647', name='test 2'}]
-17400 [main] INFO  r.s.pft.adressbook.tests.TestBase - End test testGroupCreationwith parameters [GroupData{id='48', name='test 2'}]

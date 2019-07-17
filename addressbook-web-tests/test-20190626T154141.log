@@ -1,6 +1,0 @@
-6076 [main] INFO  r.s.pft.adressbook.tests.TestBase - Start test ContactCreationwith parameters [ContactData{id=2147483647, firstName='Пётр 0', lastName='Габрилянов 0'}]
-11566 [main] INFO  r.s.pft.adressbook.tests.TestBase - End test ContactCreationwith parameters [ContactData{id=75, firstName='Пётр 0', lastName='Габрилянов 0'}]
-11567 [main] INFO  r.s.pft.adressbook.tests.TestBase - Start test ContactCreationwith parameters [ContactData{id=2147483647, firstName='Пётр 1', lastName='Габрилянов 1'}]
-15453 [main] INFO  r.s.pft.adressbook.tests.TestBase - End test ContactCreationwith parameters [ContactData{id=76, firstName='Пётр 1', lastName='Габрилянов 1'}]
-15454 [main] INFO  r.s.pft.adressbook.tests.TestBase - Start test ContactCreationwith parameters [ContactData{id=2147483647, firstName='Пётр 2', lastName='Габрилянов 2'}]
-19289 [main] INFO  r.s.pft.adressbook.tests.TestBase - End test ContactCreationwith parameters [ContactData{id=77, firstName='Пётр 2', lastName='Габрилянов 2'}]
