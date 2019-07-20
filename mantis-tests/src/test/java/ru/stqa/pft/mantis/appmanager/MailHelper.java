@@ -2,7 +2,9 @@ package ru.stqa.pft.mantis.appmanager;
 
 import org.subethamail.wiser.Wiser;
 import org.subethamail.wiser.WiserMessage;
+import ru.lanwen.verbalregex.VerbalExpression;
 import ru.stqa.pft.mantis.model.MailMessage;
+
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 import java.io.IOException;
@@ -14,6 +16,7 @@ public class MailHelper {
     private final Wiser wiser;
 
     public MailHelper(ApplicationManager app) {
+
         this.app = app;
         wiser = new Wiser();
     }
@@ -25,12 +28,12 @@ public class MailHelper {
                 return wiser.getMessages().stream().map((m) -> toModelMail(m)).collect(Collectors.toList());
             }
             try {
-                Thread.sleep(1000);
+                Thread.sleep(60000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        throw new Error("No mail");
+        throw new Error("No mail :(");
     }
 
     public static MailMessage toModelMail(WiserMessage m) {
@@ -46,7 +49,21 @@ public class MailHelper {
         }
     }
 
-    public void start() {wiser.start();}
+    public String findConfirmationLink(List<MailMessage> mailMessages, String email) {
+        // в результате фильтрации в потоке останутся только те сообщения, которые отправлены по нужному адресу, из них
+        // выбирается первое
+        MailMessage mailMessage = mailMessages.stream().filter((m) -> m.to.equals(email)).findFirst().get();
 
-    public void stop() {wiser.stop();}
+        // С помощью библиотеки Verbalregex вытаскиваем из письма ссылку
+        VerbalExpression regex = VerbalExpression.regex().find("http://").nonSpace().oneOrMore().build();
+        return regex.getText(mailMessage.text);
+    }
+
+    public void start() {
+        wiser.start();
+    }
+
+    public void stop() {
+        wiser.stop();
+    }
 }

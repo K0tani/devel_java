@@ -19,15 +19,20 @@ public class ApplicationManager {
     private final Properties properties;
     private WebDriver wd;
     private String browser;
+    private String fileWithProperties;
     private RegistrationHelper registrationHelper;
     private FtpHelper ftp;
     private MailHelper mailHelper;
     private JamesHelper jamesHelper;
+    private NavigationHelper navigationHelper;
+    private ActionHelper actionHelper;
+    private DBHelper db;
 
 
-    public ApplicationManager(String browser) {
+    public ApplicationManager(String browser, String fileWithProperties) {
         this.browser = browser;
         properties = new Properties();
+        this.fileWithProperties = fileWithProperties;
     }
 
     public void init() throws IOException {
@@ -107,6 +112,26 @@ public class ApplicationManager {
             jamesHelper = new JamesHelper(this);
         }
         return jamesHelper;
+    }
+
+    public NavigationHelper goTo() {
+        if (navigationHelper == null) {
+            navigationHelper = new NavigationHelper(this);
+        }
+        return navigationHelper;    }
+
+    public ActionHelper doAction() {
+        if (actionHelper == null) {
+            actionHelper = new ActionHelper(this);
+        }
+        return actionHelper;
+    }
+
+    public DBHelper db() {
+        if (db == null) {
+            db = new DBHelper(this);
+        }
+        return db;
     }
 }
 
