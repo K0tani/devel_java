@@ -27,6 +27,8 @@ public class ApplicationManager {
     private NavigationHelper navigationHelper;
     private ActionHelper actionHelper;
     private DBHelper db;
+    private SoapHelper soapHelper;
+
 
 
     public ApplicationManager(String browser, String fileWithProperties) {
@@ -132,6 +134,13 @@ public class ApplicationManager {
             db = new DBHelper(this);
         }
         return db;
+    }
+
+    public SoapHelper soap() {
+        if (soapHelper ==null) {
+            soapHelper = new SoapHelper(this);
+        }
+        return soapHelper;
     }
 }
 
