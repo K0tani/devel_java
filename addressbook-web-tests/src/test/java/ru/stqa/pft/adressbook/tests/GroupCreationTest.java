@@ -45,16 +45,14 @@ public class GroupCreationTest extends TestBase {
               .mapToInt(g -> g.getId()).max().getAsInt()))));
   }
 
-  @Test
+  @Test(enabled = false)
   public void testBadGroupCreation() throws Exception {
-    app.goTo().groupPage();
     Groups before = app.db().groups();
     GroupData group = new GroupData().withName("test 0");
     app.group().create(group);
     assertThat(app.group().count(), equalTo(before.size()));
     Groups after = app.db().groups();
     assertThat(after, equalTo(before));
-
   }
 
 }
