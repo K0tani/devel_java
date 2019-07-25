@@ -1,8 +1,8 @@
-package ru.stqa.pft.adressbook.tests;
+package ru.stqa.pft.addressbook.tests;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import ru.stqa.pft.adressbook.model.ContactData;
+import ru.stqa.pft.addressbook.model.ContactData;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;

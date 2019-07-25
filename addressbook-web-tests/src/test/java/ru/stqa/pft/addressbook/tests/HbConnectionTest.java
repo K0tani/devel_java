@@ -1,4 +1,4 @@
-package ru.stqa.pft.adressbook.tests;
+package ru.stqa.pft.addressbook.tests;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -7,9 +7,8 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import ru.stqa.pft.adressbook.model.ContactData;
+import ru.stqa.pft.addressbook.model.ContactData;
 
-import java.sql.SQLOutput;
 import java.util.List;
 
 public class HbConnectionTest {

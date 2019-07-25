@@ -1,12 +1,12 @@
-package ru.stqa.pft.adressbook.tests;
+package ru.stqa.pft.addressbook.tests;
 
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import ru.stqa.pft.adressbook.model.ContactData;
-import ru.stqa.pft.adressbook.model.Contacts;
-import ru.stqa.pft.adressbook.model.GroupData;
-import ru.stqa.pft.adressbook.model.Groups;
+import ru.stqa.pft.addressbook.model.ContactData;
+import ru.stqa.pft.addressbook.model.Contacts;
+import ru.stqa.pft.addressbook.model.GroupData;
+import ru.stqa.pft.addressbook.model.Groups;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

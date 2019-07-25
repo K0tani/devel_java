@@ -1,4 +1,4 @@
-package ru.stqa.pft.adressbook.model;
+package ru.stqa.pft.addressbook.model;
 
 import java.io.File;
 import java.util.HashSet;
